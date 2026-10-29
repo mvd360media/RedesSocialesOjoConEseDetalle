@@ -1,0 +1,17 @@
+{
+  "reels": {
+    "V2-R2-colgante-foto": {"scenes": [
+      {"type": "ai", "img": "s1-sofa.png", "dur": 2.4, "text": "Tiene miles de fotos de Toby en el móvil", "hl": ["toby"], "y": 1180},
+      {"type": "ai", "img": "s2-perro.png", "dur": 2.2, "text": "Pero hay una que es SU foto", "hl": ["su"], "y": 1250},
+      {"type": "product", "img": "colgante-foto-mascota-plateado-dorado.webp", "dur": 2.8, "text": "Este año la va a llevar puesta", "hl": [], "y": 1500},
+      {"type": "product", "img": "colgante-personalizado-foto-mascota-tres-colores.avif", "dur": 2.4, "text": "Su foto + su nombre, grabados en acero", "y": 1500},
+      {"type": "cta", "dur": 3.2, "big": ["Su carita,", "contigo."], "price": "34,90 €", "lines": ["Rosado, dorado o plateado", "Pídelo antes del 24 nov*", "Envío gratis península y Baleares"], "note": "*Para Navidad. Fecha recomendada, no garantiza la entrega."}
+    ]}
+  },
+  "carruseles": {
+    "V2-C-adorno": {"slides": [
+      {"type": "ai", "img": "s3-arbol.png", "text": "Bella y Charlie todavía no lo saben…", "y": 1130},
+      {"type": "product", "img": "adorno-navidad-huella-madera-pareja.webp", "text": "…pero este año sus nombres van en el árbol", "y": 1235}
+    ]}
+  }
+}
