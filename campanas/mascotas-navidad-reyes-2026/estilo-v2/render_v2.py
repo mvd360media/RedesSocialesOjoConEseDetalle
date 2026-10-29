@@ -306,22 +306,26 @@ def slide(s, idx, total):
             d.text((400, y + 140), it["price"], font=font(58), fill=TERRA)
             y += 330
     else:  # cta
-        im = Image.new("RGB", (W, H), TERRA)
+        calm = s.get("calm")
+        bg, fg = (CREAM, INK) if calm else (TERRA, CREAM)
+        im = Image.new("RGB", (W, H), bg)
         d = ImageDraw.Draw(im)
-        d.text((60, 50), "OJO CON ESE DETALLE", font=font(26, "SemiBold"), fill=CREAM)
-        y = 140
+        d.text((60, 50), "OJO CON ESE DETALLE", font=font(26, "SemiBold"), fill=GREEN if calm else CREAM)
+        y = 150
         for line in s["big"]:
-            d.text((60, y), line, font=font(92), fill=CREAM)
-            y += 100
-        y += 40
+            d.text((60, y), line, font=font(112), fill=fg)
+            y += 122
+        y += 50
         for line in s["lines"]:
-            d.ellipse((62, y + 18, 84, y + 40), fill=CREAM)
-            d.text((104, y), line, font=font(44, "Medium"), fill=CREAM)
-            y += 70
-        btn, f = s.get("button", "Enlace en la bio"), font(44)
+            d.ellipse((62, y + 22, 88, y + 48), fill=fg)
+            d.text((110, y), line, font=font(50, "Medium"), fill=fg)
+            y += 84
+        btn, f = s.get("button", "Enlace en la bio"), font(50)
         tw = d.textlength(btn, font=f)
-        d.rounded_rectangle((60, H - 250, 60 + tw + 90, H - 150), 50, fill=CREAM)
-        d.text((105, H - 228), btn, font=f, fill=TERRA)
+        d.rounded_rectangle((60, H - 300, 60 + tw + 100, H - 190), 55, fill=fg)
+        d.text((110, H - 276), btn, font=f, fill=bg)
+        if s.get("note"):
+            d.text((60, H - 140), s["note"], font=font(28, "Regular"), fill=fg)
     if idx == 0 and total > 1:
         d = ImageDraw.Draw(im)
         f, tag = font(28, "SemiBold"), "Desliza  →"

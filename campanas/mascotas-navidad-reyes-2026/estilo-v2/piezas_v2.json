@@ -557,6 +557,233 @@
      "text": "Para quien echa de menos a su mascota: un recuerdo"
     }
    ]
+  },
+  "K2-colgante-foto": {
+   "slides": [
+    {
+     "type": "ai",
+     "img": "k2a-paseo.png",
+     "text": "Cada mañana sale con Nala a dar su paseo…",
+     "hl": [
+      "nala"
+     ],
+     "y": 1100
+    },
+    {
+     "type": "ai",
+     "img": "k2b-pecho.png",
+     "text": "…y este invierno, también la lleva aquí",
+     "hl": [
+      "aquí"
+     ],
+     "y": 1120
+    },
+    {
+     "type": "product",
+     "img": "colgante-foto-mascota-plateado-dorado.webp",
+     "text": "Su foto + su nombre, grabados en acero"
+    },
+    {
+     "type": "product",
+     "img": "colgante-foto-mascota-rosado-dorado-plateado.avif",
+     "text": "Rosado, dorado o plateado"
+    },
+    {
+     "type": "cta",
+     "big": [
+      "Su carita,",
+      "contigo."
+     ],
+     "lines": [
+      "Colgante con foto · 34,90 €",
+      "Para Navidad, antes del 24 nov*",
+      "Envío gratis península y Baleares"
+     ],
+     "note": "*Fecha recomendada, no garantiza la entrega."
+    }
+   ]
+  },
+  "K3-collar-foto-dentro": {
+   "slides": [
+    {
+     "type": "ai",
+     "img": "k3a-album.png",
+     "text": "La abuela siempre dice que le gustaría verles más",
+     "hl": [
+      "verles"
+     ],
+     "y": 1120
+    },
+    {
+     "type": "ai",
+     "img": "k3b-abrazo.png",
+     "text": "Este año va a poder verles cuando quiera",
+     "hl": [
+      "cuando",
+      "quiera"
+     ],
+     "y": 1130
+    },
+    {
+     "type": "product",
+     "img": "collar-foto-proyeccion-corazon.webp",
+     "text": "Parece un colgante normal…"
+    },
+    {
+     "type": "product",
+     "img": "collar-proyeccion-detalles.webp",
+     "text": "…pero dentro de la piedra guarda su foto favorita"
+    },
+    {
+     "type": "cta",
+     "big": [
+      "Tu foto,",
+      "en secreto."
+     ],
+     "lines": [
+      "Collar con foto dentro · 34,90 €",
+      "Para Navidad, antes del 24 nov*",
+      "Envío gratis península y Baleares"
+     ],
+     "note": "*Fecha recomendada, no garantiza la entrega."
+    }
+   ]
+  },
+  "K4-llavero-foto": {
+   "slides": [
+    {
+     "type": "ai",
+     "img": "k4a-correr.png",
+     "text": "Rocky le acompaña a todas partes…",
+     "hl": [
+      "rocky"
+     ],
+     "y": 1100
+    },
+    {
+     "type": "ai",
+     "img": "k4b-oficina.png",
+     "text": "…menos al trabajo",
+     "hl": [
+      "trabajo"
+     ],
+     "y": 1130
+    },
+    {
+     "type": "product",
+     "img": "llavero-foto-perro-acero-inoxidable.webp",
+     "text": "Ahora sí: va con él en las llaves"
+    },
+    {
+     "type": "product",
+     "img": "llavero-foto-mascota-como-personalizar.webp",
+     "text": "Delante su foto. Detrás, su nombre o una fecha"
+    },
+    {
+     "type": "cta",
+     "big": [
+      "Su carita,",
+      "en tus llaves."
+     ],
+     "lines": [
+      "Llavero con foto · 29,90 €",
+      "Para Navidad, antes del 28 nov*",
+      "Envío gratis península y Baleares"
+     ],
+     "note": "*Fecha recomendada, no garantiza la entrega."
+    }
+   ]
+  },
+  "K5-adorno-navidad": {
+   "slides": [
+    {
+     "type": "ai",
+     "img": "k5a-arbol.png",
+     "text": "Primera Navidad de Bella en casa",
+     "hl": [
+      "bella"
+     ],
+     "y": 1110
+    },
+    {
+     "type": "ai",
+     "img": "k5b-dormido.png",
+     "text": "Ya ha elegido su sitio favorito…",
+     "hl": [
+      "sitio"
+     ],
+     "y": 1130
+    },
+    {
+     "type": "product",
+     "img": "adorno-navidad-personalizado-mascota.webp",
+     "text": "…y ahora su nombre también cuelga del árbol"
+    },
+    {
+     "type": "product",
+     "img": "adorno-navidad-huella-madera-varios-disenos.webp",
+     "text": "3 diseños · huella de perro o de gato"
+    },
+    {
+     "type": "cta",
+     "big": [
+      "Su sitio",
+      "en el árbol."
+     ],
+     "lines": [
+      "Adorno con su nombre · 24,90 €",
+      "Para Navidad, antes del 29 nov*",
+      "Envío gratis península y Baleares"
+     ],
+     "note": "*Fecha recomendada, no garantiza la entrega."
+    }
+   ]
+  },
+  "K6-colgante-cenizas": {
+   "slides": [
+    {
+     "type": "ai",
+     "img": "k6a-jardin.png",
+     "text": "Hay compañeros que se quedan para siempre",
+     "hl": [
+      "siempre"
+     ],
+     "y": 1120
+    },
+    {
+     "type": "ai",
+     "img": "k6b-ventana.png",
+     "text": "Aunque ya no estén, siguen muy cerca",
+     "hl": [
+      "cerca"
+     ],
+     "y": 1130
+    },
+    {
+     "type": "product",
+     "img": "colgante-cenizas-mascota-caja.webp",
+     "text": "Un corazón con su foto y su nombre"
+    },
+    {
+     "type": "product",
+     "img": "colgante-cenizas-kit-relleno.webp",
+     "text": "Dentro, un pequeño hueco para guardar un poco de él"
+    },
+    {
+     "type": "cta",
+     "big": [
+      "Siempre",
+      "cerca."
+     ],
+     "lines": [
+      "Colgante para cenizas · 39,90 €",
+      "Hecho a medida bajo pedido",
+      "Dudas: escríbenos por mensaje"
+     ],
+     "button": "Enlace en la bio",
+     "calm": true
+    }
+   ]
   }
  }
 }
