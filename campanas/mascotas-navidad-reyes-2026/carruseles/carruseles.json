@@ -1,56 +1,249 @@
 {
-  "01-collar-nombre": {
-    "slides": [
-      {"type": "cover", "img": "collares-nombre-personalizado-dorado.webp", "title": "Un nombre que se lleva puesto", "sub": "El tuyo, el de tu pareja… o el de tu perro"},
-      {"type": "photo", "img": "collar-nombre-plateado-giovanna.webp", "title": "Recortado en acero inoxidable", "sub": "Plateado o dorado · aprox. 51,7 × 20,3 mm"},
-      {"type": "photo", "img": "collar-dos-nombres-dorado.webp", "title": "¿Dos nombres? También caben", "sub": "Con las tipografías «Dos nombres» e «Infinito»"},
-      {"type": "list", "title": "Cómo se personaliza", "items": ["Elige una de las 23 tipografías", "Elige el color y el largo de la cadena", "Escribe el nombre: se corta tal y como lo escribes"], "img": "collar-nombre-tipografia-magnolia.webp"},
-      {"type": "cta", "title": "Collar con nombre personalizado", "price": "29,90 €", "lines": ["Para Navidad, pídelo antes del 15 de noviembre*", "Hecho a medida bajo pedido · plazo estimado de 3 a 4 semanas", "Envío gratis a península y Baleares"], "note": "*Fecha recomendada por la tienda, no garantiza la entrega."}
+ "01-collar-nombre": {
+  "slides": [
+   {
+    "type": "cover",
+    "img": "collares-nombre-personalizado-dorado.webp",
+    "title": "Un nombre que se lleva puesto",
+    "sub": "El tuyo, el de tu pareja… o el de tu perro"
+   },
+   {
+    "type": "photo",
+    "img": "collar-nombre-plateado-giovanna.webp",
+    "title": "Recortado en acero inoxidable",
+    "sub": "Plateado o dorado · aprox. 51,7 × 20,3 mm"
+   },
+   {
+    "type": "photo",
+    "img": "collar-dos-nombres-dorado.webp",
+    "title": "¿Dos nombres? También caben",
+    "sub": "Con las tipografías «Dos nombres» e «Infinito»"
+   },
+   {
+    "type": "list",
+    "title": "Cómo se personaliza",
+    "items": [
+     "Elige una de las 23 tipografías",
+     "Elige el color y el largo de la cadena",
+     "Escribe el nombre: se corta tal y como lo escribes"
+    ],
+    "img": "collar-nombre-tipografia-magnolia.webp"
+   },
+   {
+    "type": "cta",
+    "title": "Collar con nombre personalizado",
+    "price": "29,90 €",
+    "lines": [
+     "Para Navidad, pídelo antes del 15 de noviembre*",
+     "Hecho a medida bajo pedido · plazo estimado de 3 a 4 semanas",
+     "Envío gratis a península y Baleares"
+    ],
+    "note": "*Fecha recomendada por la tienda, no garantiza la entrega."
+   }
+  ]
+ },
+ "02-colgante-foto": {
+  "slides": [
+   {
+    "type": "cover",
+    "img": "colgante-personalizado-foto-mascota-tres-colores.avif",
+    "title": "Su carita, en un colgante",
+    "sub": "Con la foto y el nombre de tu perro o tu gato"
+   },
+   {
+    "type": "photo",
+    "img": "colgante-foto-mascota-plateado-dorado.webp",
+    "title": "De tu foto al colgante",
+    "sub": "Su foto + su nombre o un texto de hasta 20 caracteres"
+   },
+   {
+    "type": "photo",
+    "img": "colgante-foto-mascota-rosado-dorado-plateado.avif",
+    "title": "Rosado, dorado o plateado",
+    "sub": "Acero inoxidable · redondo de 20 mm · cadena de 40, 45 o 50 cm"
+   },
+   {
+    "type": "list",
+    "title": "Así sale mejor tu foto",
+    "items": [
+     "Nítida y con buena luz, mejor de día",
+     "Que se le vea bien la cara, de frente",
+     "El archivo original, sin capturas ni filtros (JPG o PNG)"
+    ],
+    "img": "colgante-foto-mascota-colores-disponibles.avif"
+   },
+   {
+    "type": "cta",
+    "title": "Colgante con la foto de tu mascota",
+    "price": "34,90 €",
+    "lines": [
+     "Para Navidad, pídelo antes del 24 de noviembre*",
+     "Hecho a medida bajo pedido · plazo estimado de 2 a 3 semanas",
+     "Envío gratis a península y Baleares"
+    ],
+    "note": "*Fecha recomendada por la tienda, no garantiza la entrega."
+   }
+  ]
+ },
+ "03-collar-foto-dentro": {
+  "slides": [
+   {
+    "type": "cover",
+    "img": "collar-foto-proyeccion-huella.webp",
+    "title": "Una foto secreta dentro del collar",
+    "sub": "A simple vista es un colgante. Acércalo al ojo y aparece"
+   },
+   {
+    "type": "photo",
+    "img": "collar-proyeccion-detalles.webp",
+    "title": "La foto va micrograbada en la piedra",
+    "sub": "Acero inoxidable y cobre · plateado, dorado o rosado"
+   },
+   {
+    "type": "photo",
+    "img": "collar-proyeccion-plantillas.webp",
+    "title": "3 plantillas para tu foto",
+    "sub": "A: solo la foto · B y C: con «te quiero» en varios idiomas"
+   },
+   {
+    "type": "photo",
+    "img": "collar-foto-proyeccion-corazon.webp",
+    "title": "21 modelos para elegir",
+    "sub": "Huella, corazón, luna, estrella, gota…"
+   },
+   {
+    "type": "cta",
+    "title": "Collar con foto dentro",
+    "price": "34,90 €",
+    "lines": [
+     "Para Navidad, pídelo antes del 24 de noviembre*",
+     "Hecho a medida bajo pedido · plazo estimado de 2 a 3 semanas",
+     "Envío gratis a península y Baleares"
+    ],
+    "note": "*Fecha recomendada por la tienda, no garantiza la entrega."
+   }
+  ]
+ },
+ "04-llavero-foto": {
+  "slides": [
+   {
+    "type": "cover",
+    "img": "llavero-foto-perro-acero-inoxidable.webp",
+    "title": "Su foto, cada vez que coges las llaves",
+    "sub": "Grabada con láser en un corazón de acero"
+   },
+   {
+    "type": "photo",
+    "img": "llavero-foto-mascota-como-personalizar.webp",
+    "title": "Delante su foto, detrás tu frase",
+    "sub": "Su nombre, una frase o una fecha"
+   },
+   {
+    "type": "photo",
+    "img": "llavero-foto-mascota-medidas.webp",
+    "title": "30 × 30 mm",
+    "sub": "Acero inoxidable 304 · corazón con huellas recortadas"
+   },
+   {
+    "type": "photo",
+    "img": "llavero-grabado-mascota-bolso.webp",
+    "title": "Para las llaves o el bolso",
+    "sub": "La foto se graba en tonos grises, no en color"
+   },
+   {
+    "type": "cta",
+    "title": "Llavero con la foto de tu mascota",
+    "price": "29,90 €",
+    "lines": [
+     "Para Navidad, pídelo antes del 28 de noviembre*",
+     "Hecho a medida bajo pedido · plazo estimado de 2 a 3 semanas",
+     "Envío gratis a península y Baleares"
+    ],
+    "note": "*Fecha recomendada por la tienda, no garantiza la entrega."
+   }
+  ]
+ },
+ "05-adorno-navidad": {
+  "slides": [
+   {
+    "type": "cover",
+    "img": "adorno-navidad-personalizado-mascota.webp",
+    "title": "Este año, su nombre también va en el árbol",
+    "sub": "Adorno de madera con el nombre de tu perro o tu gato"
+   },
+   {
+    "type": "photo",
+    "img": "adorno-navidad-huella-madera-varios-disenos.webp",
+    "title": "3 diseños",
+    "sub": "Navideño, sencillo o con alas de ángel"
+   },
+   {
+    "type": "photo",
+    "img": "adorno-navidad-huella-madera-pareja.webp",
+    "title": "Huella de perro o de gato",
+    "sub": "Con el nombre recortado, tal y como lo escribes"
+   },
+   {
+    "type": "list",
+    "title": "Cómo es",
+    "items": [
+     "Madera natural cortada con láser",
+     "8 cm de alto y 3 mm de grosor, con cordel para colgar",
+     "Cada pieza tiene su propia veta: no hay dos iguales"
+    ],
+    "img": "adorno-navidad-sencillo-perro.webp",
+    "note": "Se entrega sin caja de regalo."
+   },
+   {
+    "type": "cta",
+    "title": "Adorno de Navidad con su nombre",
+    "price": "24,90 €",
+    "lines": [
+     "Para Navidad, pídelo antes del 29 de noviembre*",
+     "Hecho a medida bajo pedido · plazo estimado de 2 a 3 semanas",
+     "Envío gratis a península y Baleares"
+    ],
+    "note": "*Fecha recomendada por la tienda, no garantiza la entrega."
+   }
+  ]
+ },
+ "06-colgante-cenizas": {
+  "slides": [
+   {
+    "type": "cover",
+    "img": "colgante-cenizas-mascota-caja.webp",
+    "title": "Para llevarle siempre cerca",
+    "sub": "Colgante en forma de corazón con su foto y su nombre"
+   },
+   {
+    "type": "photo",
+    "img": "colgante-cenizas-mascota-cara-a-cara-b.webp",
+    "title": "Delante, su foto. Detrás, tus palabras",
+    "sub": "Hasta tres frases cortas en la parte de atrás"
+   },
+   {
+    "type": "photo",
+    "img": "colgante-cenizas-kit-relleno.webp",
+    "title": "Un pequeño hueco en su interior",
+    "sub": "Para guardar un poco de sus cenizas o de su pelo. Incluye kit de relleno"
+   },
+   {
+    "type": "photo",
+    "img": "colgante-cenizas-mascota-medidas.webp",
+    "title": "Acero inoxidable · 2,5 × 2 cm",
+    "sub": "Cadena tipo caja de 50 cm · se abre girando la parte superior"
+   },
+   {
+    "type": "cta",
+    "calm": true,
+    "title": "Colgante para cenizas de mascota",
+    "price": "39,90 €",
+    "lines": [
+     "Hecho a medida bajo pedido · plazo estimado de 2 a 3 semanas",
+     "Envío gratis a península y Baleares",
+     "¿Dudas? Escríbenos por mensaje directo"
     ]
-  },
-  "02-colgante-foto": {
-    "slides": [
-      {"type": "cover", "img": "colgante-personalizado-foto-mascota-tres-colores.avif", "title": "Su carita, en un colgante", "sub": "Con la foto y el nombre de tu perro o tu gato"},
-      {"type": "photo", "img": "colgante-foto-mascota-plateado-dorado.webp", "title": "De tu foto al colgante", "sub": "Su foto + su nombre o un texto de hasta 20 caracteres"},
-      {"type": "photo", "img": "colgante-foto-mascota-rosado-dorado-plateado.avif", "title": "Rosado, dorado o plateado", "sub": "Acero inoxidable · redondo de 20 mm · cadena de 40, 45 o 50 cm"},
-      {"type": "list", "title": "Así sale mejor tu foto", "items": ["Nítida y con buena luz, mejor de día", "Que se le vea bien la cara, de frente", "El archivo original, sin capturas ni filtros (JPG o PNG)"], "img": "colgante-foto-mascota-colores-disponibles.avif"},
-      {"type": "cta", "title": "Colgante con la foto de tu mascota", "price": "34,90 €", "lines": ["Para Navidad, pídelo antes del 24 de noviembre*", "Hecho a medida bajo pedido · plazo estimado de 2 a 3 semanas", "Envío gratis a península y Baleares"], "note": "*Fecha recomendada por la tienda, no garantiza la entrega."}
-    ]
-  },
-  "03-collar-foto-dentro": {
-    "slides": [
-      {"type": "cover", "img": "collar-foto-proyeccion-huella.webp", "title": "Una foto secreta dentro del collar", "sub": "A simple vista es un colgante. Acércalo al ojo y aparece"},
-      {"type": "photo", "img": "collar-proyeccion-detalles.webp", "title": "La foto va micrograbada en la piedra", "sub": "Acero inoxidable y cobre · plateado, dorado o rosado"},
-      {"type": "photo", "img": "collar-proyeccion-plantillas.webp", "title": "3 plantillas para tu foto", "sub": "A: solo la foto · B y C: con «te quiero» en varios idiomas"},
-      {"type": "photo", "img": "collar-foto-proyeccion-corazon.webp", "title": "21 modelos para elegir", "sub": "Huella, corazón, luna, estrella, gota…"},
-      {"type": "cta", "title": "Collar con foto dentro", "price": "34,90 €", "lines": ["Para Navidad, pídelo antes del 24 de noviembre*", "Hecho a medida bajo pedido · plazo estimado de 2 a 3 semanas", "Envío gratis a península y Baleares"], "note": "*Fecha recomendada por la tienda, no garantiza la entrega."}
-    ]
-  },
-  "04-llavero-foto": {
-    "slides": [
-      {"type": "cover", "img": "llavero-foto-perro-acero-inoxidable.webp", "title": "Su foto, cada vez que coges las llaves", "sub": "Grabada con láser en un corazón de acero"},
-      {"type": "photo", "img": "llavero-foto-mascota-como-personalizar.webp", "title": "Delante su foto, detrás tu frase", "sub": "Su nombre, una frase o una fecha"},
-      {"type": "photo", "img": "llavero-foto-mascota-medidas.webp", "title": "30 × 30 mm", "sub": "Acero inoxidable 304 · corazón con huellas recortadas"},
-      {"type": "photo", "img": "llavero-grabado-mascota-bolso.webp", "title": "Para las llaves o el bolso", "sub": "La foto se graba en tonos grises, no en color"},
-      {"type": "cta", "title": "Llavero con la foto de tu mascota", "price": "29,90 €", "lines": ["Para Navidad, pídelo antes del 28 de noviembre*", "Hecho a medida bajo pedido · plazo estimado de 2 a 3 semanas", "Envío gratis a península y Baleares"], "note": "*Fecha recomendada por la tienda, no garantiza la entrega."}
-    ]
-  },
-  "05-adorno-navidad": {
-    "slides": [
-      {"type": "cover", "img": "adorno-navidad-personalizado-mascota.webp", "title": "Este año, su nombre también va en el árbol", "sub": "Adorno de madera con el nombre de tu perro o tu gato"},
-      {"type": "photo", "img": "adorno-navidad-huella-madera-varios-disenos.webp", "title": "3 diseños", "sub": "Navideño, sencillo o con alas de ángel"},
-      {"type": "photo", "img": "adorno-navidad-huella-madera-pareja.webp", "title": "Huella de perro o de gato", "sub": "Con el nombre recortado, tal y como lo escribes"},
-      {"type": "list", "title": "Cómo es", "items": ["Madera natural cortada con láser", "8 cm de alto y 3 mm de grosor, con cordel para colgar", "Cada pieza tiene su propia veta: no hay dos iguales"], "img": "adorno-navidad-sencillo-perro.webp", "note": "Se entrega sin caja de regalo."},
-      {"type": "cta", "title": "Adorno de Navidad con su nombre", "price": "24,90 €", "lines": ["Para Navidad, pídelo antes del 29 de noviembre*", "Hecho a medida bajo pedido · plazo estimado de 2 a 3 semanas", "Envío gratis a península y Baleares"], "note": "*Fecha recomendada por la tienda, no garantiza la entrega."}
-    ]
-  },
-  "06-colgante-cenizas": {
-    "slides": [
-      {"type": "cover", "img": "colgante-cenizas-mascota-caja.webp", "title": "Para llevarle siempre cerca", "sub": "Colgante en forma de corazón con su foto y su nombre"},
-      {"type": "photo", "img": "colgante-cenizas-mascota-cara-a-cara-b.webp", "title": "Delante, su foto. Detrás, tus palabras", "sub": "Hasta tres frases cortas en la parte de atrás"},
-      {"type": "photo", "img": "colgante-cenizas-kit-relleno.webp", "title": "Un pequeño hueco en su interior", "sub": "Para guardar un poco de sus cenizas o de su pelo. Incluye kit de relleno"},
-      {"type": "photo", "img": "colgante-cenizas-mascota-medidas.webp", "title": "Acero inoxidable · 2,5 × 2 cm", "sub": "Cadena tipo caja de 50 cm · se abre girando la parte superior"},
-      {"type": "cta", "calm": true, "title": "Colgante para cenizas de mascota", "price": "39,90 €", "lines": ["Hecho a medida bajo pedido · plazo estimado de 2 a 3 semanas", "Envío gratis a península y Baleares", "¿Dudas? Escríbenos por WhatsApp al 603 603 668"]}
-    ]
-  }
+   }
+  ]
+ }
 }
