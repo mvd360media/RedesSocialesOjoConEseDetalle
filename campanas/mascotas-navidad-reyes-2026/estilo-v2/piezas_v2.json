@@ -1,17 +1,79 @@
 {
   "reels": {
-    "V2-R2-colgante-foto": {"scenes": [
-      {"type": "ai", "img": "s1-sofa.png", "dur": 2.4, "text": "Tiene miles de fotos de Toby en el móvil", "hl": ["toby"], "y": 1180},
-      {"type": "ai", "img": "s2-perro.png", "dur": 2.2, "text": "Pero hay una que es SU foto", "hl": ["su"], "y": 1250},
-      {"type": "product", "img": "colgante-foto-mascota-plateado-dorado.webp", "dur": 2.8, "text": "Este año la va a llevar puesta", "hl": [], "y": 1500},
-      {"type": "product", "img": "colgante-personalizado-foto-mascota-tres-colores.avif", "dur": 2.4, "text": "Su foto + su nombre, grabados en acero", "y": 1500},
-      {"type": "cta", "dur": 3.2, "big": ["Su carita,", "contigo."], "price": "34,90 €", "lines": ["Rosado, dorado o plateado", "Pídelo antes del 24 nov*", "Envío gratis península y Baleares"], "note": "*Para Navidad. Fecha recomendada, no garantiza la entrega."}
+    "R1-collar-nombre": {"scenes": [
+      {"type": "ai", "img": "r1a-parque.png", "vo": "Hay un nombre que repites cien veces al día.", "hl": ["nombre"]},
+      {"type": "ai", "img": "r1b-abrazo.png", "vo": "El de quien siempre viene corriendo.", "hl": ["corriendo."]},
+      {"type": "product", "img": "collar-nombre-plateado-giovanna.webp", "vo": "Ahora puedes llevarlo puesto.", "text": "Ahora puedes llevarlo puesto"},
+      {"type": "product", "img": "collar-dos-nombres-dorado.webp", "vo": "El suyo, el tuyo… o los dos.", "text": "El suyo, el tuyo… o los dos"},
+      {"type": "cta", "img": null, "vo": "Collar con nombre. Para Navidad, pídelo antes del quince de noviembre. Enlace en la bio.", "min": 3.5, "big": ["Su nombre,", "contigo."], "price": "29,90 €", "lines": ["Plateado o dorado · 23 tipografías", "Para Navidad, antes del 15 nov*", "Envío gratis península y Baleares"], "note": "*Fecha recomendada, no garantiza la entrega."}
+    ]},
+    "R2-colgante-foto": {"scenes": [
+      {"type": "ai", "img": "s1-sofa.png", "vo": "Tiene miles de fotos de Toby en el móvil.", "hl": ["toby"], "y": 1180},
+      {"type": "ai", "img": "s2-perro.png", "vo": "Pero hay una que es su foto.", "text": "Pero hay una que es SU foto", "hl": ["su"]},
+      {"type": "product", "img": "colgante-foto-mascota-plateado-dorado.webp", "vo": "Y este año… se la va a llevar puesta.", "text": "Y este año… se la va a llevar puesta"},
+      {"type": "product", "img": "colgante-personalizado-foto-mascota-tres-colores.avif", "vo": "Su foto y su nombre, grabados en acero.", "text": "Su foto + su nombre, grabados en acero"},
+      {"type": "cta", "vo": "Colgante con la foto de tu mascota. Para Navidad, pídelo antes del veinticuatro de noviembre.", "min": 3.5, "big": ["Su carita,", "contigo."], "price": "34,90 €", "lines": ["Rosado, dorado o plateado", "Para Navidad, antes del 24 nov*", "Envío gratis península y Baleares"], "note": "*Fecha recomendada, no garantiza la entrega."}
+    ]},
+    "R3-collar-foto-dentro": {"scenes": [
+      {"type": "ai", "img": "r3a-tren.png", "vo": "Hay fotos que no se enseñan a todo el mundo.", "hl": ["fotos"]},
+      {"type": "ai", "img": "r3b-invierno.png", "vo": "Se guardan cerca. Muy cerca.", "hl": ["cerca."]},
+      {"type": "product", "img": "collar-foto-proyeccion-huella.webp", "vo": "Parece un colgante normal…", "text": "Parece un colgante normal…"},
+      {"type": "product", "img": "collar-proyeccion-detalles.webp", "vo": "pero si lo acercas al ojo, aparece tu foto.", "text": "…pero si lo acercas al ojo, aparece tu foto"},
+      {"type": "cta", "vo": "Collar con foto dentro. Para Navidad, pídelo antes del veinticuatro de noviembre.", "min": 3.5, "big": ["Tu foto,", "en secreto."], "price": "34,90 €", "lines": ["21 modelos · 3 plantillas", "Para Navidad, antes del 24 nov*", "Envío gratis península y Baleares"], "note": "*Fecha recomendada, no garantiza la entrega."}
+    ]},
+    "R4-llavero-foto": {"scenes": [
+      {"type": "ai", "img": "r4a-puerta.png", "vo": "Cada día, al llegar a casa…", "hl": ["casa…"]},
+      {"type": "ai", "img": "r4b-espera.png", "vo": "hay alguien que ya sabe que estás aquí.", "hl": ["alguien"]},
+      {"type": "product", "img": "llavero-foto-perro-acero-inoxidable.webp", "vo": "Ahora su carita va contigo en las llaves.", "text": "Ahora su carita va contigo en las llaves"},
+      {"type": "product", "img": "llavero-foto-mascota-como-personalizar.webp", "vo": "Delante su foto. Detrás, su nombre o una fecha.", "text": "Delante su foto. Detrás, su nombre o una fecha"},
+      {"type": "cta", "vo": "Llavero con la foto de tu mascota. Para Navidad, pídelo antes del veintiocho de noviembre.", "min": 3.5, "big": ["Su carita,", "en tus llaves."], "price": "29,90 €", "lines": ["Acero inoxidable · grabado láser", "Para Navidad, antes del 28 nov*", "Envío gratis península y Baleares"], "note": "*Fecha recomendada, no garantiza la entrega."}
+    ]},
+    "R5-adorno-navidad": {"scenes": [
+      {"type": "ai", "img": "s3-arbol.png", "vo": "Bella y Charlie llevan días mirando el árbol.", "hl": ["bella", "charlie"]},
+      {"type": "ai", "img": "r5b-regalo.png", "vo": "Y este año, por fin, tienen su sitio en él.", "hl": ["sitio"]},
+      {"type": "product", "img": "adorno-navidad-huella-madera-pareja.webp", "vo": "Su nombre, en madera, colgado en el árbol.", "text": "Su nombre, en madera, colgado en el árbol"},
+      {"type": "product", "img": "adorno-navidad-huella-madera-varios-disenos.webp", "vo": "Tres diseños. Huella de perro o de gato.", "text": "3 diseños · huella de perro o de gato"},
+      {"type": "cta", "vo": "Adorno de Navidad con su nombre. Pídelo antes del veintinueve de noviembre.", "min": 3.5, "big": ["Su sitio", "en el árbol."], "price": "24,90 €", "lines": ["Madera natural · 8 cm", "Para Navidad, antes del 29 nov*", "Envío gratis península y Baleares"], "note": "*Fecha recomendada, no garantiza la entrega."}
+    ]},
+    "R6-colgante-cenizas": {"calm": true, "scenes": [
+      {"type": "ai", "img": "r6a-cama.png", "vo": "Hay huecos que nadie más puede llenar.", "min": 2.4},
+      {"type": "ai", "img": "r6b-foto.png", "vo": "Pero hay formas de llevarle siempre cerca.", "min": 2.4, "hl": ["cerca."]},
+      {"type": "product", "img": "colgante-cenizas-mascota-caja.webp", "vo": "Un corazón con su foto y su nombre…", "text": "Un corazón con su foto y su nombre…"},
+      {"type": "product", "img": "colgante-cenizas-kit-relleno.webp", "vo": "y un pequeño hueco para guardar un poco de él.", "text": "…y un pequeño hueco para guardar un poco de él"},
+      {"type": "cta", "calm": true, "vo": "Colgante para cenizas. Si tienes cualquier duda, escríbenos.", "min": 3.5, "big": ["Siempre", "cerca."], "price": "39,90 €", "lines": ["Acero inoxidable · kit de relleno", "Hecho a medida bajo pedido", "WhatsApp 603 603 668"], "button": "Escríbenos"}
     ]}
   },
-  "carruseles": {
-    "V2-C-adorno": {"slides": [
-      {"type": "ai", "img": "s3-arbol.png", "text": "Bella y Charlie todavía no lo saben…", "y": 1130},
-      {"type": "product", "img": "adorno-navidad-huella-madera-pareja.webp", "text": "…pero este año sus nombres van en el árbol", "y": 1235}
+  "historias": {
+    "H1-fechas-limite": {"type": "poster", "big": ["Ojo con", "las fechas."], "bigsize": 130, "rows": [["Collar con nombre", "15 nov", "28 nov"], ["Colgante con foto", "24 nov", "7 dic"], ["Collar foto dentro", "24 nov", "7 dic"], ["Colgante cenizas", "27 nov", "10 dic"], ["Llavero con foto", "28 nov", "11 dic"], ["Adorno de Navidad", "29 nov", "12 dic"]], "note": "Fechas recomendadas. No garantizan la entrega."},
+    "H2-como-funciona": {"type": "ai", "img": "p2-caja.png", "text": "Tú eliges. Subes su foto. Nosotros lo hacemos a medida.", "hl": ["foto."], "y": 1300, "sub": "Envío gratis península y Baleares"},
+    "H3-colgante-foto": {"type": "ai", "img": "s1-sofa.png", "product": "colgante-personalizado-foto-mascota-tres-colores.avif", "text": "¿Cuántas fotos de tu perro tienes en el móvil?", "hl": ["fotos"], "y": 1250, "sub": "Para Navidad, antes del 24 nov"},
+    "H4-collar-nombre": {"type": "ai", "img": "r1b-abrazo.png", "product": "collar-nombre-plateado-giovanna.webp", "text": "El nombre que más repites, ahora en un collar", "hl": ["nombre"], "y": 1300, "sub": "Para Navidad, antes del 15 nov"},
+    "H5-adorno": {"type": "ai", "img": "r5b-regalo.png", "product": "adorno-navidad-huella-madera-pareja.webp", "text": "Este año también tiene su sitio en el árbol", "hl": ["sitio"], "y": 1300, "sub": "Adorno con su nombre · 24,90 €"},
+    "H6-dudas": {"type": "ai", "img": "h6-movil.png", "text": "¿Dudas con la foto o el texto? Escríbenos", "hl": ["escríbenos"], "y": 1300, "sub": "WhatsApp 603 603 668"}
+  },
+  "posts": {
+    "P1-fechas-limite": {"slides": [
+      {"type": "poster", "big": ["Ojo con", "las fechas."], "bigsize": 110, "rows": [["Collar con nombre", "15 nov", "28 nov"], ["Colgante con foto", "24 nov", "7 dic"], ["Collar foto dentro", "24 nov", "7 dic"], ["Colgante cenizas", "27 nov", "10 dic"], ["Llavero con foto", "28 nov", "11 dic"], ["Adorno de Navidad", "29 nov", "12 dic"]], "note": "Fechas recomendadas para recibirlo a tiempo. No garantizan la entrega."}
+    ]},
+    "P2-como-funciona": {"slides": [
+      {"type": "ai", "img": "p2-caja.png", "text": "Tú eliges. Subes su foto. Nosotros lo hacemos a medida.", "hl": ["foto."], "y": 1080}
+    ]},
+    "P3-tres-formas-foto": {"slides": [
+      {"type": "trio", "big": ["3 formas de llevar", "su foto contigo"], "items": [{"img": "colgante-personalizado-foto-mascota-tres-colores.avif", "name": "Colgante con foto", "price": "34,90 €"}, {"img": "collar-foto-proyeccion-huella.webp", "name": "Collar con foto dentro", "price": "34,90 €"}, {"img": "llavero-foto-perro-acero-inoxidable.webp", "name": "Llavero con foto", "price": "29,90 €"}]}
+    ]},
+    "C1-elegir-foto": {"slides": [
+      {"type": "ai", "img": "c1-foto.png", "text": "El truco para que su retrato salga perfecto", "hl": ["truco"], "y": 1080},
+      {"type": "ai", "img": "c1-luz.png", "text": "1. Luz de día, junto a una ventana", "hl": ["luz"], "y": 1150},
+      {"type": "ai", "img": "s2-perro.png", "text": "2. De frente, a la altura de sus ojos", "hl": ["frente,"], "y": 1150},
+      {"type": "product", "img": "llavero-foto-mascota-como-personalizar.webp", "text": "3. El archivo original: sin capturas ni filtros"},
+      {"type": "cta", "big": ["¿iPhone y no", "se sube?"], "lines": ["Ajustes > Cámara > Formatos", "Elige «Más compatible»", "Sube JPG o PNG"]}
+    ]},
+    "C2-para-quien": {"slides": [
+      {"type": "ai", "img": "c2-cena.png", "text": "4 personas, 4 regalos. ¿Cuál es el tuyo?", "hl": ["regalos."], "y": 1100},
+      {"type": "product", "img": "collar-foto-proyeccion-corazon.webp", "text": "Para ella: una foto secreta dentro del collar"},
+      {"type": "product", "img": "llavero-foto-perro-acero-inoxidable.webp", "text": "Para él: la foto de su perro en las llaves"},
+      {"type": "product", "img": "adorno-navidad-personalizado-mascota.webp", "text": "Amigo invisible: su mascota, en el árbol"},
+      {"type": "product", "img": "colgante-cenizas-mascota-caja.webp", "text": "Para quien echa de menos a su mascota: un recuerdo"}
     ]}
   }
 }
