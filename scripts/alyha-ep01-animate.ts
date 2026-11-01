@@ -39,7 +39,7 @@ const SCENES: Record<string, { frame: string; cropX: number; prompt: string }> =
     frame: "F3-caja.jpg",
     cropX: 100,
     prompt:
-      "Handheld camera follows the dog as she pushes the cardboard box forward with her nose two times; tinsel moves naturally. Realistic paws and fur, playful energy, no cuts, no text.",
+      "Handheld camera follows the dog as she nudges the box forward once with her nose; tinsel moves naturally. Realistic paws and fur, playful energy, no cuts, no text.",
   },
   "4": {
     frame: "F4-arbol.jpg",
