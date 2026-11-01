@@ -1,7 +1,8 @@
 /**
  * Alyha · Episodio 01 — anima un fotograma IA con Seedance 2.5 (imagen → vídeo).
  *
- * Uso:  npm run alyha:animate -- 3          (escena 2, 3, 4 o 6)
+ * Uso:  npm run alyha:animate -- 3             vista previa local (escena 2, 3, 4 o 6), 0 créditos
+ *       npm run alyha:animate -- 3 --generar   genera el vídeo en Higgsfield (GASTA CRÉDITOS)
  *
  * - 5 s, 9:16, sin audio, prompts V2/V3/V4/V6 del guion.
  * - El fotograma (2:3) se recorta a 9:16 antes de subirlo; el modelo no tiene aspect_ratio
@@ -12,7 +13,7 @@
  */
 import { config as loadEnv } from "dotenv";
 import { execFileSync } from "node:child_process";
-import { mkdirSync, readFileSync, writeFileSync, rmSync } from "node:fs";
+import { copyFileSync, mkdirSync, readFileSync, writeFileSync, rmSync } from "node:fs";
 import { join } from "node:path";
 import { tmpdir } from "node:os";
 import { HiggsfieldClient } from "@higgsfield/client";
@@ -23,6 +24,7 @@ loadEnv({ path: ".env.local", quiet: true });
 const MODEL = "bytedance/seedance-2.5/image-to-video";
 const BASE = "campanas/alyha/episodio-01";
 const OUT_DIR = join(BASE, "clips-ia");
+const PREVIEW_DIR = join(BASE, "previews");
 
 // cropX: desplazamiento horizontal del recorte 9:16 (864×1536) sobre el fotograma 1024×1536,
 // elegido para no cortar a Alyha ni el elemento de la acción.
@@ -69,15 +71,12 @@ function ffmpeg(args: string[]): void {
 }
 
 async function main(): Promise<number> {
-  const sceneId = process.argv[2];
+  const args = process.argv.slice(2);
+  const generate = args.includes("--generar");
+  const sceneId = args.find((a) => !a.startsWith("--"));
   const scene = SCENES[sceneId ?? ""];
   if (!scene) {
     console.error(`Escena no válida. Usa una de: ${Object.keys(SCENES).join(", ")}`);
-    return 1;
-  }
-  const creds = credentials();
-  if (!creds) {
-    console.error("Faltan credenciales: define HF_CREDENTIALS (id:secret) o HF_API_KEY_ID + HF_API_KEY_SECRET.");
     return 1;
   }
 
@@ -90,6 +89,26 @@ async function main(): Promise<number> {
     "-vf", `crop=864:1536:${scene.cropX}:0`,
     "-map_metadata", "-1", "-q:v", "2", cropped,
   ]);
+
+  // Por defecto: solo vista previa local, sin llamar a la API ni gastar créditos.
+  if (!generate) {
+    mkdirSync(PREVIEW_DIR, { recursive: true });
+    const preview = join(PREVIEW_DIR, `escena-${sceneId}-9x16.jpg`);
+    copyFileSync(cropped, preview);
+    rmSync(work, { recursive: true, force: true });
+    console.log(`VISTA PREVIA (no se ha llamado a Higgsfield, 0 créditos)`);
+    console.log(`Fotograma de entrada 9:16: ${preview}`);
+    console.log(`Modelo: ${MODEL} · 5 s · 720p · sin audio · mp4`);
+    console.log(`Prompt: ${scene.prompt}`);
+    console.log(`\nSi lo apruebas, genera (GASTA CRÉDITOS): npm run alyha:animate -- ${sceneId} --generar`);
+    return 0;
+  }
+
+  const creds = credentials();
+  if (!creds) {
+    console.error("Faltan credenciales: define HF_CREDENTIALS (id:secret) o HF_API_KEY_ID + HF_API_KEY_SECRET.");
+    return 1;
+  }
 
   // 2) Subida al CDN de Higgsfield (necesario: el modelo pide image_url).
   const uploader = new HiggsfieldClient({ apiKey: creds.id, apiSecret: creds.secret });
