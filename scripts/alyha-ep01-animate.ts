@@ -42,7 +42,7 @@ const SCENES: Record<string, { frame: string; cropX: number; prompt: string }> =
     frame: "F2-rincon.jpg",
     cropX: 80,
     prompt:
-      "Subtle handheld smartphone camera. The dog slowly turns her head from the empty corner toward the camera and lowers her ears with a sad, theatrical look, then sighs. Natural motion, realistic fur, no camera cuts, no text.",
+      "Subtle handheld smartphone camera. The dog glances back toward the empty corner, then looks at the camera again, lowers her ears with a sad, theatrical look and sighs. Natural motion, realistic fur, no camera cuts, no text.",
   },
   "3": {
     frame: "F3-caja.jpg",
@@ -52,7 +52,7 @@ const SCENES: Record<string, { frame: string; cropX: number; prompt: string }> =
   },
   "4": {
     frame: "F4-arbol.jpg",
-    cropX: 80,
+    cropX: 160, // 160 = máximo a la derecha: la cola entera dentro del plano
     prompt:
       "Slow push-in toward the dog sitting next to the lit Christmas tree; fairy lights twinkle softly; the dog looks up at the empty branch, then back to the camera and tilts her head. Natural, realistic motion, no cuts, no text.",
   },
