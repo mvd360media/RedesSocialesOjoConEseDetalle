@@ -5,21 +5,21 @@ Formato: Reel 9:16, 20–25 s · Voz: la titular, en off (pensamientos de Alyha,
 Estado: BORRADOR para revisar la historia antes de generar.
 
 ## Idea
-1 de noviembre. En casa no hay ni árbol ni turrón. Alyha decide montar la Navidad por su cuenta… y descubre que en el árbol falta lo más importante: un adorno con SU nombre.
+Alyha ya va de reno… pero en casa no hay ni árbol ni turrón. Alyha decide montar la Navidad por su cuenta… y descubre que en el árbol falta lo más importante: un adorno con SU nombre.
 
 ## Escenas
 
 | # | Duración | Origen | Qué se ve | Texto en pantalla |
 |---|---|---|---|---|
-| 1 | 3 s | **Vídeo real** de Alyha mirando a cámara / ladeando la cabeza | Plano de su cara, gesto de «¿perdona?» | **1 DE NOVIEMBRE Y EN ESTA CASA NI ÁRBOL 😤** |
+| 1 | 6 s | **Vídeo real DSC_0009 (s 0–6)**: Alyha con cuernos de reno mira a cámara y gira la cabeza «indignada» | Ya va de reno… | **YO YA VOY DE RENO… Y EN ESTA CASA NI ÁRBOL 😤** |
 | 2 | 4 s | IA (Higgsfield, imagen→vídeo) | Alyha sentada frente a un rincón vacío del salón, mira el hueco y luego a cámara con cara de pena | **«Ya lo pondré», dice. Ya, ya…** |
 | 3 | 4 s | IA | Alyha empuja con el hocico una caja de cartón con espumillón y bolas que asoman | **Pues me pongo las pilas yo solita** |
 | 4 | 4 s | IA | Plano abierto: el árbol ya montado y encendido; Alyha sentada al lado, orgullosa, mira una rama vacía | **Pero aquí falta algo…** |
 | 5 | 4 s | **Foto real del producto** (ficha) con zoom suave | Adorno de madera con nombre | **Su nombre, en el árbol 🎄** + «Con el nombre que tú quieras» |
-| 6 | 3 s | Vídeo real o IA: Alyha tumbada junto al árbol, satisfecha | Cierre | **24,90 € · Pídelo antes del 29 nov*** · *Fecha recomendada, no garantiza la entrega |
+| 6 | 3 s | **Vídeo real DSC_0008 (lazo navideño, mira a cámara)** o fotograma IA F6 | Cierre | **24,90 € · Pídelo antes del 29 nov*** · *Fecha recomendada, no garantiza la entrega |
 
 ## Guion de la voz (para que lo digas a tu manera)
-1. «Hola, soy Alyha. Estamos a uno de noviembre y en esta casa… ni árbol, ni turrón, ni nada. ¡Qué fuerte!»
+1. «Hola, soy Alyha. Yo ya voy de reno… y en esta casa, ni árbol, ni turrón, ni nada. ¡Qué fuerte!»
 2. «Mi humana dice que "ya lo pondrá". Ya, ya… como el año pasado. A buenas horas, mangas verdes.»
 3. «Así que me he puesto las pilas yo solita. Si quieres algo bien hecho, hazlo tú misma.»
 4. «Pero aquí falta algo, ¿eh? Este hueco tiene nombre… y es el mío.»
@@ -31,7 +31,7 @@ Dichos alternativos si quieres cambiar alguno: «más vale tarde que nunca», «
 ## Prompts
 
 ### Fotogramas iniciales (GPT Image, con fotos reales de Alyha como referencia)
-Se generan con 3–4 fotos de Alyha adjuntas para que la IA mantenga su aspecto. `[ALYHA]` se sustituirá por su descripción exacta (raza, color, marcas) cuando vea las fotos.
+Se generan con 3–4 fotos de Alyha adjuntas para que la IA mantenga su aspecto. `[ALYHA]` = «Alyha, a slim medium-small white short-haired mixed-breed female dog with tricolour head markings (dark brown-black patches around both eyes and over the ears, tan eyebrows and cheeks), a narrow white blaze from forehead to muzzle, white freckled muzzle, black nose, semi-erect ears folding forward at the tips, long white curled tail». Referencias usadas: DSC_0037 (frente), DSC_0035 (3/4), DSC_0039 (perfil), DSC_0022 (cuerpo entero). Fotogramas generados en `episodio-01/fotogramas-ia/`.
 
 - **F2 – rincón vacío:** «Candid vertical smartphone photo, the dog from the reference images ([ALYHA]) sitting on a wooden floor in a cosy Spanish living room, facing an empty corner next to a window where a Christmas tree should be, looking back over her shoulder at the camera with a sad, dramatic expression. Late afternoon natural light, slightly grainy, realistic fur, no text, no logos, no decorations.»
 - **F3 – caja de adornos:** «Candid vertical smartphone photo, the dog from the reference images ([ALYHA]) pushing a cardboard box with her nose across a living room floor, red and gold tinsel and generic glass baubles spilling out of the box, playful determined expression, warm lamp light, realistic fur and paws, no text, no logos, no ornaments with names.»
@@ -55,3 +55,7 @@ Modelo a probar primero: el más barato que mantenga bien el pelaje y las patas 
 ## Coste estimado
 - Fotogramas: con la clave de OpenAI que ya funciona (céntimos por imagen).
 - Higgsfield: 4 clips × 5 s ≈ 20 s de vídeo. Con las tarifas publicadas de la API (desde ~0,07–0,14 $/s) serían ~1,5–3 $ por pasada; contando repeticiones, ~5–8 $ el episodio [Probable: verificar tarifa del día].
+
+
+## Nota
+No se menciona la fecha de publicación en el guion. La fecha límite «antes del 29 nov» solo vale si se publica antes; después, cambiar a la de Reyes (12 dic).
