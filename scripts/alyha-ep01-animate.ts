@@ -93,7 +93,19 @@ async function main(): Promise<number> {
 
   // 2) Subida al CDN de Higgsfield (necesario: el modelo pide image_url).
   const uploader = new HiggsfieldClient({ apiKey: creds.id, apiSecret: creds.secret });
-  const imageUrl = await uploader.uploadImage(readFileSync(cropped), "jpeg");
+  // El SDK (0.2.6) ignora `upload_headers` de la API y S3 rechaza la firma (falta x-amz-tagging),
+  // así que se sube a mano con las cabeceras que devuelve la API.
+  const api = (uploader as unknown as { client: { post: (p: string, b: object) => Promise<{ data: {
+    upload_url: string; public_url: string; upload_headers?: Record<string, string>;
+  } }> } }).client;
+  const { data: link } = await api.post("/files/generate-upload-url", { content_type: "image/jpeg" });
+  const put = await fetch(link.upload_url, {
+    method: "PUT",
+    body: readFileSync(cropped),
+    headers: link.upload_headers ?? { "Content-Type": "image/jpeg" },
+  });
+  if (!put.ok) throw new Error(`Subida del fotograma fallida: HTTP ${put.status}`);
+  const imageUrl = link.public_url;
 
   // 3) Generación.
   config({ credentials: `${creds.id}:${creds.secret}` });
