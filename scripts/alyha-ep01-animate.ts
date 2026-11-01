@@ -100,7 +100,7 @@ async function hf<T>(creds: Creds, method: "GET" | "POST", path: string, body?: 
   return JSON.parse(text) as T;
 }
 
-type HfRequest = { request_id?: string; status?: string; video?: { url?: string } };
+type HfRequest = { request_id?: string; status?: string; error?: string; video?: { url?: string } };
 
 function ffmpeg(args: string[]): void {
   execFileSync("ffmpeg", ["-hide_banner", "-loglevel", "error", "-y", ...args], { stdio: "inherit" });
@@ -138,7 +138,7 @@ async function waitAndDownload(creds: Creds, requestId: string, sceneId: string)
     const why =
       status === "nsfw" ? "bloqueada por moderación" :
       status === "failed" ? "fallida" : "cancelada";
-    console.error(`Petición ${requestId} ${why}. No se ha generado vídeo.`);
+    console.error(`Petición ${requestId} ${why}. No se ha generado vídeo.${result.error ? ` Motivo: ${result.error}` : ""}`);
     return status === "nsfw" ? 2 : 1;
   }
   const url = result.video?.url;
@@ -250,7 +250,8 @@ async function main(): Promise<number> {
     duration: 5,
     resolution: "720p",
     generate_audio: false,
-    output_format: "mp4",
+    // Sin output_format: el esquema de image-to-video no lo define y rechaza campos extra
+    // (additionalProperties: false). Por defecto devuelve mp4.
   });
   const requestId = submitted.request_id;
   if (!requestId) {
