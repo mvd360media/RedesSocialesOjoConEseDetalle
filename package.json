@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "start": "tsx index.ts",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "alyha:animate": "tsx scripts/alyha-ep01-animate.ts"
   },
   "repository": {
     "type": "git",
