@@ -5,7 +5,8 @@
  *       npm run alyha:animate -- 3 --generar              genera el vídeo en Higgsfield (GASTA CRÉDITOS)
  *       npm run alyha:animate -- 3 --recuperar=<id>       solo consulta/descarga una petición ya enviada (0 créditos)
  *
- * - 5 s, 9:16, sin audio, prompts V2/V3/V4/V6 del guion.
+ * - 4 s (mínimo del modelo y lo que pide el guion; ~0,46 $/s a 720p ≈ 1,85 $/clip), 9:16, sin audio,
+ *   prompts V2/V3/V4/V6 del guion.
  * - El fotograma (2:3) se recorta a 9:16 antes de subirlo; el modelo no tiene aspect_ratio
  *   y respeta la proporción de la imagen de entrada.
  * - El envío se hace UNA sola vez (sin reintentos automáticos que dupliquen el gasto). El request_id
@@ -31,6 +32,8 @@ const OUT_DIR = join(BASE, "clips-ia");
 const PREVIEW_DIR = join(BASE, "previews");
 const POLL_INTERVAL_MS = 5_000;
 const MAX_WAIT_MS = 20 * 60_000;
+const DURATION_S = 4;
+const USD_PER_S_720P = 0.4622; // tarifa publicada antes de descuentos
 
 // cropX: desplazamiento horizontal del recorte 9:16 (864×1536) sobre el fotograma 1024×1536,
 // elegido para no cortar a Alyha ni el elemento de la acción.
@@ -217,7 +220,7 @@ async function main(): Promise<number> {
     rmSync(work, { recursive: true, force: true });
     console.log(`VISTA PREVIA (no se ha llamado a Higgsfield, 0 créditos)`);
     console.log(`Fotograma de entrada 9:16: ${preview}`);
-    console.log(`Modelo: ${MODEL} · 5 s · 720p · sin audio · mp4`);
+    console.log(`Modelo: ${MODEL} · ${DURATION_S} s · 720p · sin audio · mp4 · ≈ ${(DURATION_S * USD_PER_S_720P).toFixed(2)} $`);
     console.log(`Prompt: ${scene.prompt}`);
     console.log(`\nSi lo apruebas, genera (GASTA CRÉDITOS): npm run alyha:animate -- ${sceneId} --generar`);
     return 0;
@@ -243,11 +246,11 @@ async function main(): Promise<number> {
   rmSync(work, { recursive: true, force: true });
 
   // 3) Envío ÚNICO de la generación (sin reintentos: un reintento podría cobrarse dos veces).
-  console.log(`Enviando escena ${sceneId} a ${MODEL} (5 s, 720p, sin audio)…`);
+  console.log(`Enviando escena ${sceneId} a ${MODEL} (${DURATION_S} s, 720p, sin audio)…`);
   const submitted = await hf<HfRequest>(creds, "POST", `/${MODEL}`, {
     image_url: link.public_url,
     prompt: scene.prompt,
-    duration: 5,
+    duration: DURATION_S,
     resolution: "720p",
     generate_audio: false,
     // Sin output_format: el esquema de image-to-video no lo define y rechaza campos extra
