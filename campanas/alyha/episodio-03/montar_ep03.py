@@ -1,7 +1,7 @@
 """Monta el episodio 03 de Alyha (colgante con foto, 3 colores) sin coste.
 
 Uso: python3 montar_ep02.py <dir_entrada> <dir_salida> <fuente_DMSans.ttf>
-dir_entrada: cubierto.png, mano.png, tres.png, cuello.png, cara.jpg, real_trote.mp4
+dir_entrada: cubierto.png, mano.png, tres.png, cuello.png, cara.jpg, cierre.mp4
 Salida: escenas sueltas + E03-final.mp4. Sin voz, sin metadatos.
 """
 import math
@@ -157,6 +157,12 @@ VARIANTES = {
              ["34,90 €", "Para Navidad,", "antes del 24 nov*"]),
     "novio": (["IMAGINA QUE TU NOVIO", "TE REGALA ESTO…"], {"NOVIO"},
               ["Comenta «QUIERO»", "si lo necesitas", "34,90 € · antes del 24 nov*"]),
+    "etiqueta": (["ETIQUETA A QUIEN TE", "TIENE QUE REGALAR ESTO"], {"ETIQUETA"},
+                 ["34,90 €", "Para Navidad,", "antes del 24 nov*"]),
+    "hijo": (["SI TU PERRO ES TU HIJO…", "ESTO ES PARA TI"], {"HIJO…"},
+             ["34,90 €", "Para Navidad,", "antes del 24 nov*"]),
+    "minovio": (["MI NOVIO NO SABE QUE", "VA A REGALARME ESTO"], {"NOVIO"},
+                ["34,90 €", "Para Navidad,", "antes del 24 nov*"]),
 }
 HOOK, HOOK_ACCENT, CTA = VARIANTES[os.environ.get("VARIANTE", "fuerte")]
 
@@ -167,7 +173,7 @@ SCENES = [
     ("escena3", lambda: compare(3.5), ["¿SE PARECE O NO?"], {"NO?"}, H // 2 - 70, INK),
     ("escena4", lambda: still("tres.png", 3.5, 1.0, 1.10, 0.5, 0.45), ["Rosado, dorado o plateado"], {"ROSADO,", "DORADO", "PLATEADO"}, 300, INK),
     ("escena5", lambda: still("cuello.png", 3.5, 1.0, 1.15, 0.55, 0.55), ["Y contigo,", "a todas partes"], {"PARTES"}, 330, INK),
-    ("escena6", lambda: list(video_frames(IN / "real_trote.mp4", 0, 4.2, 0.9)),
+    ("escena6", lambda: list(video_frames(IN / "cierre.mp4", 0, 2.8, 0.65)),
      CTA, {"34,90", "«QUIERO»"}, 1250, TERRA),
 ]
 
