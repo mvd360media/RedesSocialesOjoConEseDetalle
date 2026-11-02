@@ -71,7 +71,13 @@ def frames_for(s):
     if kind == "still":
         img = Image.open(IN / s["src"]).convert("RGB")
         z0, z1 = s.get("zoom", [1.0, 1.1])
-        return [fill(img, z0 + (z1 - z0) * i / n, *s.get("focus", [0.5, 0.5])) for i in range(n)]
+        out = []
+        for i in range(n):
+            z = z0 + (z1 - z0) * i / n
+            if s.get("punch"):
+                z *= 1.0 + 0.22 * max(0.0, 1 - (i / FPS) / 0.25) ** 2
+            out.append(fill(img, z, *s.get("focus", [0.5, 0.5])))
+        return out
     if kind == "reveal":
         a = Image.open(IN / s["cover"]).convert("RGB")
         b_img = Image.open(IN / s["src"]).convert("RGB")
@@ -116,6 +122,8 @@ def main():
         for i, fr in enumerate(frames):
             fr = fr.copy()
             t = i / FPS
+            if s.get("flash") and i < 3:
+                fr = Image.blend(fr, Image.new("RGB", (W, H), (255, 255, 255)), 0.75 - 0.25 * i)
             if s.get("text_after"):
                 t -= s["text_after"]
             if t >= 0 and s.get("text"):
