@@ -1,7 +1,79 @@
-{"name": "E04", "scenes": [
- {"type": "video", "src": "volante.mp4", "start": 0, "len": 4, "text": ["MI PERRA SE CREE QUE", "EL COCHE ES SUYO…"], "accent": ["SUYO…"], "y": 330},
- {"type": "video", "src": "copiloto.mp4", "start": 0, "len": 3, "text": ["…y tiene sus motivos"], "accent": ["MOTIVOS"], "y": 330},
- {"type": "reveal", "cover": "c-llavero.png", "src": "u-llavero-mano.png", "dur": 4, "hold": 1.0, "text": ["LAS LLAVES", "LLEVAN SU CARA"], "accent": ["CARA"], "y": 330},
- {"type": "still", "src": "u-llavero-llaves.png", "dur": 3.5, "zoom": [1.0, 1.12], "focus": [0.55, 0.6], "text": ["Delante su foto.", "Detrás, su nombre o una fecha"], "accent": ["FOTO."], "y": 300},
- {"type": "video", "src": "mirada-coche.mp4", "start": 0, "len": 3, "speed": 0.75, "text": ["29,90 €", "Para Navidad,", "antes del 28 nov*"], "accent": ["29,90"], "y": 1250, "box": "terra", "note": "*Fecha recomendada, no garantiza la entrega."}
-]}
+{
+ "name": "E04",
+ "scenes": [
+  {
+   "type": "video",
+   "src": "volante.mp4",
+   "start": 0,
+   "len": 4,
+   "text": [
+    "MI PERRA SE CREE QUE",
+    "EL COCHE ES SUYO…"
+   ],
+   "accent": [
+    "SUYO…"
+   ],
+   "y": 330
+  },
+  {
+   "type": "video",
+   "src": "copiloto.mp4",
+   "start": 0,
+   "len": 3,
+   "text": [
+    "…y tiene sus motivos"
+   ],
+   "accent": [
+    "MOTIVOS"
+   ],
+   "y": 330
+  },
+  {
+   "type": "reveal",
+   "cover": "c-llavero.png",
+   "src": "u-llavero-mano.png",
+   "dur": 4,
+   "hold": 1.0,
+   "text": [
+    "LAS LLAVES",
+    "LLEVAN SU CARA"
+   ],
+   "accent": [
+    "CARA"
+   ],
+   "y": 330
+  },
+  {
+   "type": "product",
+   "src": "llavero-personalizar.png",
+   "dur": 3.5,
+   "text": [
+    "Delante, su foto.",
+    "Detrás, su nombre",
+    "o una fecha"
+   ],
+   "accent": [
+    "FOTO."
+   ],
+   "y": 250
+  },
+  {
+   "type": "video",
+   "src": "mirada-coche.mp4",
+   "start": 0,
+   "len": 3,
+   "speed": 0.75,
+   "text": [
+    "29,90 €",
+    "Para Navidad,",
+    "antes del 28 nov*"
+   ],
+   "accent": [
+    "29,90"
+   ],
+   "y": 1250,
+   "box": "terra",
+   "note": "*Fecha recomendada, no garantiza la entrega."
+  }
+ ]
+}
