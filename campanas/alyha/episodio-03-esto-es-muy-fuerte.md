@@ -17,3 +17,13 @@ Notas: los colgantes con el retrato de Alyha son una simulación de personalizac
 
 Ganchos alternativos para pruebas A/B: «Te aviso: esto es una locura… y vas a querer uno» · «No estás preparada para esto…» · «Lo que hay en esta caja te va a encantar».
 «Te va a doler…» se reserva solo para el colgante de cenizas/recuerdo.
+
+## Variantes de gancho (mismo vídeo; `VARIANTE=mami|novio|fuerte`)
+### A · «Que no lo vea ninguna mami perruna»
+- Escena 1: **QUE NO LO VEA NINGUNA MAMI PERRUNA…** · Voz: «Que no lo vea ninguna mami perruna… porque luego no hay quien la pare.»
+- Cierre igual (34,90 € · antes del 24 nov). Voz final: «Y si tienes una mami perruna cerca… etiquétala. Ella sabrá qué hacer.»
+- Pie de foto sugerido: «Etiqueta a la mami perruna que necesita esto 🐾»
+### B · «Imagina que tu novio te regala esto…»
+- Escena 1: **IMAGINA QUE TU NOVIO TE REGALA ESTO…** · Voz: «Imagina que tu novio te regala esto… ¿Lloras o lloras?»
+- Cierre: **Comenta «QUIERO» si lo necesitas · 34,90 € · antes del 24 nov*** · Voz: «Comenta "quiero" y te paso el enlace. Y si eres el novio… ya sabes lo que tienes que hacer.»
+- Requisito: responder rápido por mensaje directo a cada «QUIERO» (a mano o con respuesta automática).

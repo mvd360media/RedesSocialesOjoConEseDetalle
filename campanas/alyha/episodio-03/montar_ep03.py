@@ -5,6 +5,7 @@ dir_entrada: cubierto.png, mano.png, tres.png, cuello.png, cara.jpg, real_trote.
 Salida: escenas sueltas + E03-final.mp4. Sin voz, sin metadatos.
 """
 import math
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -149,20 +150,30 @@ def fill_box(img, w, h, zoom):
     return r.crop((x, y, x + w, y + h))
 
 
+VARIANTES = {
+    "fuerte": (["ESTO ES MUY FUERTE…", "Y VAS A QUERER UNO"], {"FUERTE…", "UNO"},
+               ["34,90 €", "Para Navidad,", "antes del 24 nov*"]),
+    "mami": (["QUE NO LO VEA", "NINGUNA MAMI PERRUNA…"], {"MAMI", "PERRUNA…"},
+             ["34,90 €", "Para Navidad,", "antes del 24 nov*"]),
+    "novio": (["IMAGINA QUE TU NOVIO", "TE REGALA ESTO…"], {"NOVIO"},
+              ["Comenta «QUIERO»", "si lo necesitas", "34,90 € · antes del 24 nov*"]),
+}
+HOOK, HOOK_ACCENT, CTA = VARIANTES[os.environ.get("VARIANTE", "fuerte")]
+
 SCENES = [
     ("escena1", lambda: still("cubierto.png", 3.5, 1.0, 1.12, 0.3, 0.6),
-     ["ESTO ES MUY FUERTE…", "Y VAS A QUERER UNO"], {"FUERTE…", "UNO"}, 330, INK),
+     HOOK, HOOK_ACCENT, 330, INK),
     ("escena2", lambda: reveal(4.0), ["SU CARITA.", "GRABADA PARA SIEMPRE."], {"SIEMPRE."}, 330, INK),
     ("escena3", lambda: compare(3.5), ["¿SE PARECE O NO?"], {"NO?"}, H // 2 - 70, INK),
     ("escena4", lambda: still("tres.png", 3.5, 1.0, 1.10, 0.5, 0.45), ["Rosado, dorado o plateado"], {"ROSADO,", "DORADO", "PLATEADO"}, 300, INK),
     ("escena5", lambda: still("cuello.png", 3.5, 1.0, 1.15, 0.55, 0.55), ["Y contigo,", "a todas partes"], {"PARTES"}, 330, INK),
     ("escena6", lambda: list(video_frames(IN / "real_trote.mp4", 0, 4.2, 0.9)),
-     ["34,90 €", "Para Navidad,", "antes del 24 nov*"], {"34,90"}, 1250, TERRA),
+     CTA, {"34,90", "«QUIERO»"}, 1250, TERRA),
 ]
 
 
 def main():
-    final = writer(OUT / "E03-final.mp4")
+    final = writer(OUT / f"E03-final-{os.environ.get('VARIANTE', 'fuerte')}.mp4")
     for name, make, lines, accent, y, box in SCENES:
         out = writer(OUT / f"E03-{name}.mp4")
         frames = make()
