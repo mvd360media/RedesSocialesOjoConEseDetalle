@@ -15,9 +15,14 @@ OUT.mkdir(parents=True, exist_ok=True)
 W, H, FPS, FADE = 1080, 1920, 30, 0.8
 CREAM = (251, 248, 244)
 
-SEGUNDA = {"fuerte": "…pero vas a querer uno", "suave": "…pero te acompañará siempre"}[VAR]
+PRIMERA, SEGUNDA = {
+    "fuerte": ("Te va a doler…", "…pero vas a querer uno"),
+    "suave": ("Te va a doler…", "…pero te acompañará siempre"),
+    "sigue": ("Para quien sigue estando…", "…aunque ya no esté"),
+    "huecos": ("Hay huecos que", "nadie más puede llenar…"),
+}[VAR]
 SCENES = [
-    ("cama.png", "foto", 4.5, ["Te va a doler…"]),
+    ("cama.png", "foto", 4.5, [PRIMERA]),
     ("foto.png", "foto", 4.5, [SEGUNDA]),
     ("manos.png", "foto", 4.5, ["Su carita y su nombre,", "en un corazón"]),
     ("kit.webp", "producto", 4.0, ["Dentro, un pequeño hueco", "para guardar un poco de él"]),
