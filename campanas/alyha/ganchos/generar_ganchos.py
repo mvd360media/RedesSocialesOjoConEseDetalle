@@ -10,7 +10,7 @@ import sys
 import tempfile
 from pathlib import Path
 
-BASE, ESC, OUT, FONT = (Path(a) for a in sys.argv[1:5])
+BASE, ESC, OUT, FONT = (Path(a).resolve() for a in sys.argv[1:5])
 TOOL = Path(__file__).resolve().parent.parent / "montar_episodio.py"
 OUT.mkdir(parents=True, exist_ok=True)
 
