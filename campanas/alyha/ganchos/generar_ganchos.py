@@ -28,16 +28,16 @@ EPISODIOS = {
         "mami": (["QUE NO LO VEA", "NINGUNA MAMI PERRUNA…"], ["MAMI", "PERRUNA…"]),
     }),
     "E04": ({"type": "video", "src": "e4-base.mp4", "start": 0, "len": 4, "y": 330}, 5, {
-        "pov": (["POV: TU PERRO", "TE ACOMPAÑA A TODAS PARTES"], ["POV:"]),
+        "pov": (["POV: TU PERRO", "TE ACOMPAÑA", "A TODAS PARTES"], ["POV:"]),
         "parael": (["EL REGALO PERFECTO", "PARA ÉL (Y SU PERRO)"], ["PERFECTO"]),
-        "copiloto": (["SI TU PERRO ES", "TU COPILOTO… ESTO ES PARA TI"], ["COPILOTO…"]),
-        "etiqueta": (["ETIQUETA A ALGUIEN QUE", "LLEVA A SU PERRO A TODAS PARTES"], ["ETIQUETA"]),
+        "copiloto": (["SI TU PERRO ES", "TU COPILOTO…", "ESTO ES PARA TI"], ["COPILOTO…"]),
+        "etiqueta": (["ETIQUETA A ALGUIEN", "QUE LLEVA A SU PERRO", "A TODAS PARTES"], ["ETIQUETA"]),
     }),
     "E05": ({"type": "video", "src": "e5-base.mp4", "start": 0, "len": 3, "y": 330}, 7, {
         "tres": (["3 COSAS QUE HACE", "MI PERRA Y ME DERRITEN"], ["DERRITEN"]),
         "derrite": (["SI TU PERRO TE DERRITE…", "MIRA ESTO"], ["DERRITE…"]),
         "pov": (["POV: TU PERRA", "TE ROBA EL CORAZÓN"], ["POV:"]),
-        "mami": (["ETIQUETA A UNA MAMI PERRUNA", "QUE NECESITA ESTO"], ["MAMI", "PERRUNA"]),
+        "mami": (["ETIQUETA A UNA", "MAMI PERRUNA", "QUE NECESITA ESTO"], ["MAMI", "PERRUNA"]),
     }),
 }
 
@@ -45,6 +45,9 @@ EPISODIOS = {
 def main():
     for ep, (scene, n_scenes, variants) in EPISODIOS.items():
         for key, (lines, accent) in variants.items():
+            out = OUT / f"{ep}-final-{key}.mp4"
+            if out.exists():
+                continue
             s = dict(scene, text=lines, accent=accent)
             with tempfile.TemporaryDirectory() as tmp:
                 spec = Path(tmp) / "spec.json"
