@@ -151,7 +151,7 @@ def fill_box(img, w, h, zoom):
 
 SCENES = [
     ("escena1", lambda: still("cubierto.png", 3.5, 1.0, 1.12, 0.3, 0.6),
-     ["TE VA A DOLER…", "PERO ES NECESARIO"], {"DOLER…", "NECESARIO"}, 330, INK),
+     ["ESTO ES MUY FUERTE…", "Y VAS A QUERER UNO"], {"FUERTE…", "UNO"}, 330, INK),
     ("escena2", lambda: reveal(4.0), ["SU CARITA.", "GRABADA PARA SIEMPRE."], {"SIEMPRE."}, 330, INK),
     ("escena3", lambda: compare(3.5), ["¿SE PARECE O NO?"], {"NO?"}, H // 2 - 70, INK),
     ("escena4", lambda: still("tres.png", 3.5, 1.0, 1.10, 0.5, 0.45), ["Rosado, dorado o plateado"], {"ROSADO,", "DORADO", "PLATEADO"}, 300, INK),
