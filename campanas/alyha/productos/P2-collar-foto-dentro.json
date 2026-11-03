@@ -1,0 +1,8 @@
+{"name": "P2-collar-foto-dentro", "scenes": [
+ {"type": "still", "src": "L1.png", "dur": 3.5, "zoom": [1.0, 1.45], "focus": [0.27, 0.52], "text": ["NADIE SABE LO QUE", "LLEVA DENTRO…"], "accent": ["DENTRO…"], "y": 1350},
+ {"type": "video", "src": "e2-mirada-nt.mp4", "start": 0, "len": 3.5, "text": ["Acércalo al ojo…"], "accent": ["OJO…"], "y": 330},
+ {"type": "video", "src": "e2-pov-nt.mp4", "start": 0, "len": 3.5, "text": ["¡PERO SI SOY YO!"], "accent": ["YO!"], "y": 1500},
+ {"type": "video", "src": "n072708.mp4", "start": 0, "len": 4, "text": ["ME LLEVA EN EL CORAZÓN.", "LITERAL."], "accent": ["LITERAL."], "y": 1350},
+ {"type": "product", "src": "producto.jpg", "dur": 3.5, "text": ["Tu foto, escondida dentro", "21 modelos"], "accent": ["DENTRO"], "y": 300, "box": "terra"},
+ {"type": "video", "src": "n172020.mp4", "start": 18, "len": 4.5, "text": ["34,90 €", "Para Navidad, pídelo", "antes del 24 nov*"], "accent": ["34,90"], "y": 330, "box": "terra", "note": "*Fecha recomendada, no garantiza la entrega."}
+]}

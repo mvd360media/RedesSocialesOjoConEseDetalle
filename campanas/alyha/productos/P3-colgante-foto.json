@@ -1,0 +1,8 @@
+{"name": "P3-colgante-foto", "scenes": [
+ {"type": "video", "src": "v173554.mp4", "start": 1.5, "len": 3, "text": ["SI TU PERRO", "TE RECIBE ASÍ…"], "accent": ["ASÍ…"], "y": 330},
+ {"type": "video", "src": "n072708.mp4", "start": 0.5, "len": 3.5, "text": ["…se merece ir contigo", "a todas partes"], "accent": ["CONTIGO"], "y": 1400},
+ {"type": "reveal", "cover": "e3-cubierto.png", "src": "e3-mano.png", "dur": 4.5, "hold": 1.2, "text": ["Su carita, grabada", "para siempre"], "accent": ["SIEMPRE"], "y": 330},
+ {"type": "still", "src": "e3-cuello.png", "dur": 3, "zoom": [1.0, 1.15], "focus": [0.55, 0.55], "text": ["Cerca del corazón"], "accent": ["CORAZÓN"], "y": 330},
+ {"type": "still", "src": "e3-tres.png", "dur": 3, "zoom": [1.0, 1.08], "text": ["Rosado, dorado o plateado"], "accent": ["DORADO"], "y": 300},
+ {"type": "video", "src": "n073352.mp4", "start": 24, "len": 4.5, "text": ["34,90 €", "Para Navidad, pídelo", "antes del 24 nov*"], "accent": ["34,90"], "y": 330, "box": "terra", "note": "*Fecha recomendada, no garantiza la entrega."}
+]}

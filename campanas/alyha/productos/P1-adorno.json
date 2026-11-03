@@ -1,0 +1,106 @@
+{
+ "name": "P1-adorno-navidad",
+ "scenes": [
+  {
+   "type": "video",
+   "src": "d0008.mov",
+   "start": 0,
+   "len": 3.5,
+   "pre": "transpose=2",
+   "text": [
+    "ESTE AÑO EL ÁRBOL",
+    "LLEVA SU NOMBRE"
+   ],
+   "accent": [
+    "NOMBRE"
+   ],
+   "y": 1300
+  },
+  {
+   "type": "still",
+   "src": "F4-arbol.png",
+   "dur": 3,
+   "zoom": [
+    1.0,
+    1.1
+   ],
+   "text": [
+    "Bolas, luces, una piña…",
+    "¿y su nombre?"
+   ],
+   "accent": [
+    "NOMBRE?"
+   ],
+   "y": 330
+  },
+  {
+   "type": "still",
+   "src": "u-adorno-arbol.png",
+   "dur": 4,
+   "zoom": [
+    1.0,
+    1.15
+   ],
+   "focus": [
+    0.5,
+    0.55
+   ],
+   "flash": true,
+   "text": [
+    "Su nombre, en madera"
+   ],
+   "accent": [
+    "NOMBRE,"
+   ],
+   "y": 330
+  },
+  {
+   "type": "product",
+   "src": "adorno-ficha.jpg",
+   "dur": 3.5,
+   "text": [
+    "3 diseños · 8 cm",
+    "El detalle que nadie",
+    "más va a regalar"
+   ],
+   "accent": [
+    "NADIE"
+   ],
+   "y": 300,
+   "box": "terra"
+  },
+  {
+   "type": "video",
+   "src": "d0010.mov",
+   "start": 1,
+   "len": 3.5,
+   "pre": "transpose=2",
+   "text": [
+    "Porque también",
+    "es de la familia"
+   ],
+   "accent": [
+    "FAMILIA"
+   ],
+   "y": 1300
+  },
+  {
+   "type": "video",
+   "src": "d0008.mov",
+   "start": 4,
+   "len": 4,
+   "pre": "transpose=2",
+   "text": [
+    "24,90 €",
+    "Para Navidad, pídelo",
+    "antes del 29 nov*"
+   ],
+   "accent": [
+    "24,90"
+   ],
+   "y": 1180,
+   "box": "terra",
+   "note": "*Fecha recomendada, no garantiza la entrega."
+  }
+ ]
+}

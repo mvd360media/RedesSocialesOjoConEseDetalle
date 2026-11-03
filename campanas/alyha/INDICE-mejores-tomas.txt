@@ -1,0 +1,61 @@
+MEJORES TOMAS DE ALYHA · índice (minuto:segundo)
+
+
+== COCHE Y VIAJES ==
+00:01.2  #01 coche-mirada-primer-plano  (6.5 s)  -> 1-coche-y-viajes/01-coche-mirada-primer-plano.mp4
+00:07.7  #02 coche-dormida  (8.0 s)  -> 1-coche-y-viajes/02-coche-dormida.mp4
+00:15.8  #03 coche-al-volante  (6.0 s)  -> 1-coche-y-viajes/03-coche-al-volante.mp4
+00:21.8  #04 coche-copiloto  (3.5 s)  -> 1-coche-y-viajes/04-coche-copiloto.mp4
+00:25.3  #05 coche-mirada  (3.0 s)  -> 1-coche-y-viajes/05-coche-mirada.mp4
+00:28.4  #06 carretera-amanecer  (5.0 s)  -> 1-coche-y-viajes/06-carretera-amanecer.mp4
+
+== PLAYA ==
+00:34.6  #07 playa-amanecer-explora  (7.0 s)  -> 2-playa/07-playa-amanecer-explora.mp4
+00:41.6  #08 playa-sol-sobre-el-mar  (5.0 s)  -> 2-playa/08-playa-sol-sobre-el-mar.mp4
+00:46.6  #09 playa-rocas-amanecer  (7.0 s)  -> 2-playa/09-playa-rocas-amanecer.mp4
+00:53.7  #10 playa-carrera-lateral  (3.0 s)  -> 2-playa/10-playa-carrera-lateral.mp4
+00:56.7  #11 playa-en-la-orilla  (3.5 s)  -> 2-playa/11-playa-en-la-orilla.mp4
+01:00.2  #12 playa-corre-camara-lenta  (4.0 s)  -> 2-playa/12-playa-corre-camara-lenta.mp4
+
+== CAMPO Y NARANJAL ==
+01:05.5  #13 campo-hierba-corre-hacia-ti  (11.2 s)  -> 3-campo-y-naranjal/13-campo-hierba-corre-hacia-ti.mp4
+01:16.7  #14 naranjal-camino-atardecer  (6.0 s)  -> 3-campo-y-naranjal/14-naranjal-camino-atardecer.mp4
+01:22.7  #15 naranjal-atardecer-02  (6.2 s)  -> 3-campo-y-naranjal/15-naranjal-atardecer-02.mp4
+01:28.9  #16 cielo-atardecer  (5.2 s)  -> 3-campo-y-naranjal/16-cielo-atardecer.mp4
+01:34.1  #17 naranjal-olfatea  (6.1 s)  -> 3-campo-y-naranjal/17-naranjal-olfatea.mp4
+01:40.2  #18 naranjal-olfatea-02  (5.2 s)  -> 3-campo-y-naranjal/18-naranjal-olfatea-02.mp4
+01:45.3  #19 paseo-pov-naranjal  (6.0 s)  -> 3-campo-y-naranjal/19-paseo-pov-naranjal.mp4
+01:51.4  #20 paseo-te-mira  (7.1 s)  -> 3-campo-y-naranjal/20-paseo-te-mira.mp4
+01:58.4  #21 paseo-carretera-pov  (10.1 s)  -> 3-campo-y-naranjal/21-paseo-carretera-pov.mp4
+02:08.5  #22 trote-feliz  (3.7 s)  -> 3-campo-y-naranjal/22-trote-feliz.mp4
+
+== CASA Y TERRAZA ==
+02:13.4  #23 terraza-salto-bienvenida  (4.0 s)  -> 4-casa-y-terraza/23-terraza-salto-bienvenida.mp4
+02:17.5  #24 llegada-a-casa-llaves  (9.0 s)  -> 4-casa-y-terraza/24-llegada-a-casa-llaves.mp4
+02:26.5  #25 bebe-agua  (9.0 s)  -> 4-casa-y-terraza/25-bebe-agua.mp4
+02:35.5  #26 asomada-cortina  (5.1 s)  -> 4-casa-y-terraza/26-asomada-cortina.mp4
+02:40.6  #27 comiendo  (9.0 s)  -> 4-casa-y-terraza/27-comiendo.mp4
+02:49.6  #28 sofa-mirada  (6.0 s)  -> 4-casa-y-terraza/28-sofa-mirada.mp4
+02:55.6  #29 espera-comida  (3.2 s)  -> 4-casa-y-terraza/29-espera-comida.mp4
+02:58.8  #30 lazo-navidad  (8.0 s)  -> 4-casa-y-terraza/30-lazo-navidad.mp4
+03:06.8  #31 lazo-navidad-02  (8.0 s)  -> 4-casa-y-terraza/31-lazo-navidad-02.mp4
+03:14.8  #32 panuelo-calabaza  (6.0 s)  -> 4-casa-y-terraza/32-panuelo-calabaza.mp4
+
+== CON EL GATO ==
+03:22.0  #33 gato-mirada-fija  (4.0 s)  -> 5-con-el-gato/33-gato-mirada-fija.mp4
+03:26.1  #34 alyha-celosa-del-gato  (6.1 s)  -> 5-con-el-gato/34-alyha-celosa-del-gato.mp4
+03:32.1  #35 gato-bostezo  (3.5 s)  -> 5-con-el-gato/35-gato-bostezo.mp4
+03:35.7  #36 gato-en-la-silla  (7.0 s)  -> 5-con-el-gato/36-gato-en-la-silla.mp4
+03:42.7  #37 gato-y-alyha  (4.0 s)  -> 5-con-el-gato/37-gato-y-alyha.mp4
+03:46.7  #38 gato-se-acerca  (4.1 s)  -> 5-con-el-gato/38-gato-se-acerca.mp4
+
+== RÍO Y MONTAÑA ==
+03:52.0  #39 rio-sendero-pov  (12.2 s)  -> 6-rio-y-montana/39-rio-sendero-pov.mp4
+04:04.2  #40 rio-rocas-pov-te-mira  (6.0 s)  -> 6-rio-y-montana/40-rio-rocas-pov-te-mira.mp4
+04:10.2  #41 rio-entre-piedras  (8.0 s)  -> 6-rio-y-montana/41-rio-entre-piedras.mp4
+04:18.2  #42 rio-en-el-agua  (4.0 s)  -> 6-rio-y-montana/42-rio-en-el-agua.mp4
+04:22.3  #43 rio-al-otro-lado  (7.2 s)  -> 6-rio-y-montana/43-rio-al-otro-lado.mp4
+04:29.5  #44 rio-mirador  (3.2 s)  -> 6-rio-y-montana/44-rio-mirador.mp4
+04:32.7  #45 montana-paisaje  (5.2 s)  -> 6-rio-y-montana/45-montana-paisaje.mp4
+
+Duración total: 4 min 38 s

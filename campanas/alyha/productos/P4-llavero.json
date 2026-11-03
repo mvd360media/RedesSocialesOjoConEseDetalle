@@ -1,0 +1,8 @@
+{"name": "P4-llavero", "scenes": [
+ {"type": "video", "src": "volante.mp4", "start": 0, "len": 3.5, "text": ["MI PERRA SE CREE QUE", "EL COCHE ES SUYO…"], "accent": ["SUYO…"], "y": 330},
+ {"type": "video", "src": "copiloto.mp4", "start": 0, "len": 3, "text": ["…y tiene sus motivos"], "accent": ["MOTIVOS"], "y": 330},
+ {"type": "video", "src": "a2v103655.mp4", "start": 19, "len": 4, "text": ["Las llaves son mías.", "Pero…"], "accent": ["PERO…"], "y": 330},
+ {"type": "reveal", "cover": "c-llavero.png", "src": "u-llavero-mano.png", "dur": 4, "hold": 1.0, "text": ["…llevan su cara"], "accent": ["CARA"], "y": 330},
+ {"type": "still", "src": "u-llavero-llaves.png", "dur": 3, "zoom": [1.0, 1.1], "text": ["Delante su foto,", "detrás su nombre"], "accent": ["FOTO,", "NOMBRE"], "y": 330},
+ {"type": "video", "src": "n095206.mp4", "start": 1, "len": 4.5, "text": ["29,90 €", "Para Navidad, pídelo", "antes del 28 nov*"], "accent": ["29,90"], "y": 1250, "box": "terra", "note": "*Fecha recomendada, no garantiza la entrega."}
+]}

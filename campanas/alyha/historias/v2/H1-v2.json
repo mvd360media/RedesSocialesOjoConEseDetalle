@@ -1,0 +1,76 @@
+{
+ "name": "H1v2",
+ "scenes": [
+  {
+   "type": "video",
+   "src": "v173554.mp4",
+   "start": 1.5,
+   "len": 3,
+   "text": [
+    "MI HUMANA DICE",
+    "QUE ME AMA…",
+    "PERO MI FOTO NO ESTÁ",
+    "EN NINGÚN SITIO",
+    "IMPORTANTE"
+   ],
+   "accent": [
+    "AMA…",
+    "IMPORTANTE"
+   ],
+   "y": 330
+  },
+  {
+   "type": "video",
+   "src": "a2v103740.mp4",
+   "start": 26,
+   "len": 4.5
+  },
+  {
+   "type": "video",
+   "src": "a2v115012.mp4",
+   "start": 3,
+   "len": 3.5
+  },
+  {
+   "type": "video",
+   "src": "n072708.mp4",
+   "start": 0,
+   "len": 4.5
+  },
+  {
+   "type": "reveal",
+   "cover": "e3-cubierto.png",
+   "src": "e3-mano.png",
+   "dur": 4.5,
+   "hold": 1.3
+  },
+  {
+   "type": "still",
+   "src": "e3-cuello.png",
+   "dur": 3.5,
+   "zoom": [
+    1.0,
+    1.15
+   ],
+   "focus": [
+    0.55,
+    0.55
+   ]
+  },
+  {
+   "type": "still",
+   "src": "e3-tres.png",
+   "dur": 3,
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "type": "video",
+   "src": "n073352.mp4",
+   "start": 24,
+   "len": 4.5
+  }
+ ]
+}

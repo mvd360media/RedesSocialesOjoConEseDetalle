@@ -1,0 +1,10 @@
+{"name": "H6v2", "scenes": [
+ {"type": "video", "src": "trote.mp4", "start": 0, "len": 3.3, "text": ["MIS 5 COSAS", "FAVORITAS DEL MUNDO", "(LA 5 OS VA", "A SORPRENDER)"], "accent": ["5", "SORPRENDER)"], "y": 330},
+ {"type": "video", "src": "v174705.mp4", "start": 6, "len": 3, "text": ["1. Oler cosas importantes"], "accent": ["1."], "y": 330},
+ {"type": "video", "src": "a2v103740.mp4", "start": 15, "len": 3, "text": ["2. Beber agua"], "accent": ["2."], "y": 330},
+ {"type": "video", "src": "n111911.mp4", "start": 10.5, "len": 2.6, "speed": 0.75, "text": ["3. Correr por la playa"], "accent": ["3."], "y": 330},
+ {"type": "video", "src": "v173554.mp4", "start": 1.5, "len": 3, "text": ["4. Recibirla en casa"], "accent": ["4."], "y": 330},
+ {"type": "reveal", "cover": "c-nombre.png", "src": "u-nombre-flatlay.png", "dur": 4, "hold": 1.0, "text": ["5. Que lleve mi nombre"], "accent": ["5."], "y": 330},
+ {"type": "still", "src": "u-nombre-cuello.png", "dur": 3.5, "zoom": [1.0, 1.12], "focus": [0.6, 0.45]},
+ {"type": "video", "src": "n172020.mp4", "start": 18, "len": 5}
+]}

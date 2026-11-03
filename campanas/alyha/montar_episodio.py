@@ -2,6 +2,7 @@
 
 Uso: python3 montar_episodio.py <spec.json> <dir_entrada> <dir_salida> <fuente_DMSans.ttf>
 Tipos de escena: still, video, reveal (tapado -> destapado), product (foto de ficha sobre fondo).
+En video: "pre" (filtro ffmpeg previo, p. ej. "transpose=2"), "zoom" (número) y "focus" [fx, fy] para reencuadrar.
 """
 import json
 import math
@@ -58,8 +59,12 @@ def caption(im, lines, t, y, box, accent):
             cx += d.textlength(word + " ", font=fnt)
 
 
-def video_frames(path, start, dur, speed):
-    vf = f"setpts={1 / speed}*PTS,fps={FPS},scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H}"
+def video_frames(path, start, dur, speed, pre=None, zoom=1.0, focus=(0.5, 0.5)):
+    zw, zh = int(W * zoom) // 2 * 2, int(H * zoom) // 2 * 2
+    vf = (f"setpts={1 / speed}*PTS,fps={FPS},scale={zw}:{zh}:force_original_aspect_ratio=increase,"
+          f"crop={W}:{H}:(iw-{W})*{focus[0]}:(ih-{H})*{focus[1]}")
+    if pre:
+        vf = pre + "," + vf
     p = subprocess.Popen(["ffmpeg", "-loglevel", "error", "-ss", str(start), "-t", str(dur), "-i", str(path),
                           "-vf", vf, "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
     while (b := p.stdout.read(W * H * 3)) and len(b) == W * H * 3:
@@ -77,7 +82,9 @@ def frames_for(s):
     kind, dur = s["type"], s.get("dur", 3.5)
     n = int(dur * FPS)
     if kind == "video":
-        return list(video_frames(IN / s["src"], s.get("start", 0), s.get("len", dur), s.get("speed", 1.0)))
+        z = s.get("zoom", 1.0)
+        return list(video_frames(IN / s["src"], s.get("start", 0), s.get("len", dur), s.get("speed", 1.0),
+                                 s.get("pre"), z if isinstance(z, (int, float)) else 1.0, s.get("focus", (0.5, 0.5))))
     if kind == "still":
         img = Image.open(IN / s["src"]).convert("RGB")
         z0, z1 = s.get("zoom", [1.0, 1.1])

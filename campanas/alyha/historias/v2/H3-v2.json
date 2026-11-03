@@ -1,0 +1,70 @@
+{
+ "name": "H3v2",
+ "scenes": [
+  {
+   "type": "still",
+   "src": "f175237.jpg",
+   "dur": 4,
+   "zoom": [
+    1.0,
+    1.12
+   ],
+   "focus": [
+    0.4,
+    0.7
+   ],
+   "text": [
+    "LO QUE LOS",
+    "PERROS SABEMOS",
+    "Y LOS HUMANOS",
+    "OLVIDÁIS"
+   ],
+   "accent": [
+    "SABEMOS",
+    "OLVIDÁIS"
+   ],
+   "y": 330
+  },
+  {
+   "type": "video",
+   "src": "n073352.mp4",
+   "start": 3,
+   "len": 4.5
+  },
+  {
+   "type": "video",
+   "src": "n073352.mp4",
+   "start": 24,
+   "len": 4.5
+  },
+  {
+   "type": "video",
+   "src": "v173554.mp4",
+   "start": 1.5,
+   "len": 3,
+   "speed": 0.7
+  },
+  {
+   "type": "video",
+   "src": "n072708.mp4",
+   "start": 0.5,
+   "len": 4
+  },
+  {
+   "type": "still",
+   "src": "e3-mano.png",
+   "dur": 4,
+   "zoom": [
+    1.0,
+    1.08
+   ]
+  },
+  {
+   "type": "video",
+   "src": "v174524.mp4",
+   "start": 16,
+   "len": 4.5,
+   "speed": 0.8
+  }
+ ]
+}

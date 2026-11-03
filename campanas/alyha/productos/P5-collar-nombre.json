@@ -1,0 +1,9 @@
+{"name": "P5-collar-nombre", "scenes": [
+ {"type": "video", "src": "trote.mp4", "start": 0, "len": 3, "text": ["COSAS QUE HACE ALYHA", "Y ME DERRITEN"], "accent": ["DERRITEN"], "y": 330},
+ {"type": "video", "src": "a2v103740.mp4", "start": 15, "len": 3, "text": ["1. Cómo bebe agua"], "accent": ["1."], "y": 330},
+ {"type": "video", "src": "espera.mp4", "start": 0, "len": 2.6, "text": ["2. Cómo me mira", "antes de comer"], "accent": ["2."], "y": 1250},
+ {"type": "video", "src": "n111911.mp4", "start": 10.5, "len": 2.6, "speed": 0.75, "text": ["3. Cómo corre", "por la playa"], "accent": ["3."], "y": 330},
+ {"type": "reveal", "cover": "c-nombre.png", "src": "u-nombre-flatlay.png", "dur": 4, "hold": 1.0, "text": ["POR ESO LLEVO", "SU NOMBRE CONMIGO"], "accent": ["NOMBRE"], "y": 330},
+ {"type": "still", "src": "u-nombre-cuello.png", "dur": 3, "zoom": [1.0, 1.12], "focus": [0.6, 0.45], "text": ["Su nombre, en tu cuello"], "accent": ["NOMBRE,"], "y": 1500},
+ {"type": "video", "src": "n172020.mp4", "start": 18, "len": 4.5, "text": ["29,90 €", "Para Navidad, pídelo", "antes del 15 nov*"], "accent": ["29,90"], "y": 330, "box": "terra", "note": "*Fecha recomendada, no garantiza la entrega."}
+]}

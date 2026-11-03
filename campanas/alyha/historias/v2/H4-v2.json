@@ -1,0 +1,9 @@
+{"name": "H4v2", "scenes": [
+ {"type": "video", "src": "pov-paseo.mp4", "start": 0, "len": 3.5, "text": ["QUERIDA MAMÁ PERRUNA:", "HAY COSAS DE", "LOS HUMANOS", "QUE NO ENTIENDO"], "accent": ["PERRUNA:", "HUMANOS"], "y": 330},
+ {"type": "video", "src": "v174705.mp4", "start": 2, "len": 3.5},
+ {"type": "video", "src": "n153414.mp4", "start": 16, "len": 3.5},
+ {"type": "video", "src": "n153339.mp4", "start": 6, "len": 4},
+ {"type": "video", "src": "e2-mirada-nt.mp4", "start": 0, "len": 3.5},
+ {"type": "video", "src": "e2-pov-nt.mp4", "start": 0, "len": 3.5},
+ {"type": "video", "src": "n172020.mp4", "start": 18, "len": 5}
+]}
