@@ -5,6 +5,7 @@ dir_entrada: escena1.mp4, escena3.mp4, escena6.mp4, F2-rincon.png, F4-arbol.png
 Salida: una pieza por escena + E01-final.mp4 (sin voz, sin metadatos).
 """
 import math
+import os
 import random
 import subprocess
 import sys
@@ -16,6 +17,10 @@ IN, OUT, FONT, PRODUCT = Path(sys.argv[1]), Path(sys.argv[2]), sys.argv[3], sys.
 OUT.mkdir(parents=True, exist_ok=True)
 W, H, FPS = 1080, 1920, 30
 INK, CREAM, TERRA = (30, 27, 46), (251, 248, 244), (185, 83, 46)
+
+
+if os.environ.get("NOTEXT"):
+    ImageDraw.ImageDraw.text = lambda self, *a, **k: None
 
 
 def font(size, weight="Bold"):
@@ -33,6 +38,8 @@ def fill(img, zoom=1.0, dx=0.0):
 
 
 def caption(im, lines, t, y=360, size=74, box=INK, accent=()):
+    if os.environ.get("NOTEXT"):
+        return
     """Bloque de texto con cajas por línea; entra con un pequeño rebote."""
     k = min(t / 0.25, 1.0)
     scale = 0.85 + 0.15 * k + 0.04 * math.sin(k * math.pi)

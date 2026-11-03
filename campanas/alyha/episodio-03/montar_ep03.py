@@ -18,6 +18,10 @@ W, H, FPS = 1080, 1920, 30
 INK, CREAM, TERRA = (30, 27, 46), (251, 248, 244), (185, 83, 46)
 
 
+if os.environ.get("NOTEXT"):
+    ImageDraw.ImageDraw.text = lambda self, *a, **k: None
+
+
 def font(size, weight="Bold"):
     f = ImageFont.truetype(FONT, size)
     f.set_variation_by_name(weight)
@@ -34,6 +38,8 @@ def fill(img, zoom=1.0, fx=0.5, fy=0.5):
 
 
 def caption(im, lines, t, y, size=76, box=INK, accent=()):
+    if os.environ.get("NOTEXT"):
+        return
     k = min(t / 0.25, 1.0)
     fnt = font(int(size * (0.85 + 0.15 * k + 0.04 * math.sin(k * math.pi))))
     d = ImageDraw.Draw(im, "RGBA")

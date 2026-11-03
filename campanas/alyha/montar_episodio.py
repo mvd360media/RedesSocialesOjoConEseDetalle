@@ -5,6 +5,7 @@ Tipos de escena: still, video, reveal (tapado -> destapado), product (foto de fi
 """
 import json
 import math
+import os
 import subprocess
 import sys
 from pathlib import Path
@@ -15,6 +16,10 @@ SPEC, IN, OUT, FONT = json.loads(Path(sys.argv[1]).read_text()), Path(sys.argv[2
 OUT.mkdir(parents=True, exist_ok=True)
 W, H, FPS = 1080, 1920, 30
 INK, CREAM, TERRA = (30, 27, 46), (251, 248, 244), (185, 83, 46)
+
+
+if os.environ.get("NOTEXT"):
+    ImageDraw.ImageDraw.text = lambda self, *a, **k: None
 
 
 def font(size, weight="Bold"):
@@ -32,6 +37,8 @@ def fill(img, zoom=1.0, fx=0.5, fy=0.5):
 
 
 def caption(im, lines, t, y, box, accent):
+    if os.environ.get("NOTEXT"):
+        return
     k = min(t / 0.25, 1.0)
     fnt = font(int(76 * (0.85 + 0.15 * k + 0.04 * math.sin(k * math.pi))))
     d = ImageDraw.Draw(im, "RGBA")

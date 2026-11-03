@@ -1,0 +1,9 @@
+{"name": "H2", "scenes": [
+ {"type": "video", "src": "v174524.mp4", "start": 4, "len": 4, "text": ["UN PASEO NORMAL POR EL CAMPO…", "HASTA QUE ME ACORDÉ", "DE ALGO IMPORTANTE"], "accent": ["ACORDÉ"], "y": 330},
+ {"type": "video", "src": "v174648.mp4", "start": 0, "len": 4},
+ {"type": "video", "src": "v174705.mp4", "start": 0, "len": 3.5},
+ {"type": "still", "src": "f175305.jpg", "dur": 3.5, "zoom": [1.0, 1.25], "focus": [0.5, 0.6], "punch": true},
+ {"type": "still", "src": "F4-arbol.png", "dur": 3.5, "zoom": [1.0, 1.1]},
+ {"type": "still", "src": "u-adorno-arbol.png", "dur": 3.5, "zoom": [1.0, 1.12], "focus": [0.5, 0.55], "flash": true},
+ {"type": "still", "src": "F6-cierre.png", "dur": 3.5, "zoom": [1.0, 1.08]}
+]}
