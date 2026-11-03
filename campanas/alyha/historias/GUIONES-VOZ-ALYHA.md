@@ -43,7 +43,9 @@ Música: suave, de piano o guitarra. Sin prisa, sin fecha límite.
 
 ---
 
-## Historias escritas (pendientes de montar)
+## Historias montadas (H4, H5, H6)
+Gancho con texto en la escena 1. H4 y H5 llevan el cuerpo sin texto. H6 lleva los números de la lista (1–5); en Drive también está la versión sin números.
+Carpetas en Drive: 01-Ganchos/H4…H6 · 02-Cuerpos-sin-texto · 03-Historias-Alyha · 07-Escenas-sueltas.
 
 ### H4 · «Querida mamá perruna: tenemos que hablar» — Collar con foto dentro
 - Gancho: «Querida mamá perruna: hay cosas de los humanos que no entiendo.»
@@ -60,7 +62,8 @@ Música: suave, de piano o guitarra. Sin prisa, sin fecha límite.
 - «¿Perdona? ¿Y yo qué? Con todo lo que yo hago por esta familia…»
 - «…y entonces he visto que había otra caja.» (destape: colgante de Alyha)
 - «Vale. Retiro lo dicho. Hoy el gato me cae… regular.»
-- Falta: imagen del colgante con la cara del gato (necesita saldo de OpenAI o la muestra real). Material del gato: v103835.
+- Colgante del gato: montaje propio (cara del gato de v103835, s 28.6, grabada en gris sobre el colgante de Alyha) → `gato_colgante.py`. Sin nombre grabado (no sabemos cómo se llama el gato). Antes de usarlo en anuncios, mejor sustituirlo por una foto real de un colgante con gato.
+- Escenas: 1 gato en la mesa (gancho) · 2 Alyha mirando · 3 gato paseando · 4 colgante del gato (zoom) · 5 Alyha en el naranjal, «¿y yo qué?» · 6 caja → colgante de Alyha · 7 gato a cámara lenta, «me cae… regular».
 
 ### H6 · «Mis 5 cosas favoritas del mundo (la 5 os va a sorprender)» — Collar con nombre
 1. «Oler cosas importantes. Muy importantes.»
