@@ -40,8 +40,11 @@ def caption(im, lines, t, y, box, accent):
     if os.environ.get("NOTEXT"):
         return
     k = min(t / 0.25, 1.0)
-    fnt = font(int(76 * (0.85 + 0.15 * k + 0.04 * math.sin(k * math.pi))))
     d = ImageDraw.Draw(im, "RGBA")
+    base = 76
+    while base > 40 and max(d.textlength(line, font=font(base)) for line in lines) > W - 150:
+        base -= 2
+    fnt = font(int(base * (0.85 + 0.15 * k + 0.04 * math.sin(k * math.pi))))
     lh = int(fnt.size * 1.3)
     for i, line in enumerate(lines):
         tw = d.textlength(line, font=fnt)
